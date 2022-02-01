@@ -1,18 +1,18 @@
 @font-face {
     font-family: 'AvenirBold';
-    src: url('Avenir\ LT\ Std\ 85\ Heavy.otf');
+    src: url('Avenir LT Std 85 Heavy.otf');
 }
 
 @font-face {
     font-family: 'AvenirMedium';
-    src: url('Avenir\ LT\ Std\ 65\ Medium.otf');
+    src: url('Avenir LT Std 65 Medium.otf');
 }
 
 
 
 * {
     text-align: center;
-    font-family: 'AvenirBold', 'Avenir LT Std', sans-serif;
+    font-family: 'AvenirBold', 'Arial', sans-serif;
 }
 
 
