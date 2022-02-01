@@ -8,6 +8,11 @@
     src: url('Avenir LT Std 65 Medium.otf');
 }
 
+@font-face {
+    font-family: 'AvenirBolder';
+    src: url('Avenir LT Std 85 Heavy.otf');
+}
+
 * {
     text-align: center;
     font-family: 'AvenirBold', 'Arial', sans-serif;
