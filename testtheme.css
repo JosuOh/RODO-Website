@@ -96,7 +96,7 @@ body::-webkit-scrollbar {
     top: 27vh;
     font-size: 80px;
     line-height: 85px;
-    font-weight: normal;
+    font-weight: bold;
     letter-spacing: 3px;
     z-index: 2;}
     @media(max-height:800px) { .swiper-slide .text{
