@@ -36,11 +36,29 @@ const swiper = new Swiper('.swiper', {
     // And if we need scrollbar
     scrollbar: {
       el: '.swiper-scrollbar',
-    }
+    },
     
+    breakpoints: {
+
+      480: {
+        noSwiping: true
+      },
+  
+      992: {
+        noSwiping: true
+      },
+  
+      1024: {
+        noSwiping: true
+      },
+      1920 : {
+        noSwiping: true
+      }
+    }
+
   });
 
-  var hidden = document.getElementById("curtis-video");
+  var hidden = document.getElementById("promo-video");
   var el;
 
     /*IF play-button is pressed, load video*/
@@ -77,10 +95,7 @@ const swiper = new Swiper('.swiper', {
      console.log("Play 3");
  }
     function loadVid() {
-      hidden.load();
-      el = document.getElementsByClassName("mfp-container")[0];
-      //el.addEventListener("click", playVid());
-      //console.log(el);
+      document.querySelector(".pop-vid").load();
   }
 
 /*!
@@ -110,7 +125,18 @@ var page_7 = document.querySelector('#page7');
 var page_8 = document.querySelector('#page8');
 var page_9 = document.querySelector('#page9');
 
-var mfp_container = document.querySelector(".mfp-content");
+var mfp_container;
+
+document.addEventListener('click', function() {mfp_container = document.querySelector(".mfp-content"); 
+  mfp_container.addEventListener('click', function(){
+        document.querySelector(".pop-vid").pause();
+    });
+  });
+
+
+
+
+
 
 /*
 window.addEventListener('load', function () {
