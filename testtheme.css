@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'AvenirBold';
-    src: url('Avenir LT Std 95 Black.otf');
+    src: url('Avenir LT Std 85 Heavy.otf');
 }
 
 @font-face {
@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: 'AvenirBolder';
-    src: url('Avenir LT Std 85 Heavy.otf');
+    src: url('Avenir LT Std 95 Black.otf');
 }
 
 * {
