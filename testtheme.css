@@ -298,7 +298,7 @@ body::-webkit-scrollbar {
 
 #page5 .title {
     margin-top: 25px;
-    height: 80px;
+    height: 90px;
     font-weight: bold;
     width: 65%;
     font-size: 48px;}
@@ -328,7 +328,7 @@ body::-webkit-scrollbar {
             }
         }
     }
-#page5 .title .col-xs-6 {
+#page5 .title .col-xs-4 {
     transition: all 0.25s ease-in-out;}
     #page5 .title .col-xs-4:hover { 
         font-size: 52px;
