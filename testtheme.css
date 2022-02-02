@@ -1,22 +1,34 @@
-@font-face {
-    font-family: 'AvenirBold';
-    src: url('Avenir LT Std 85 Heavy.otf');
-}
+/***
+    Things to fix: 
+                - Swiper Height should be flush with screen without overflow
+                - All positions should be proportionally the same in whatever aspect ratio
+                - All positions should be the same in every browser
+                - Video Resizing
+                - Quote backgrounds appear from 0
+***/
 
 @font-face {
-    font-family: 'AvenirMedium';
-    src: url('Avenir LT Std 65 Medium.otf');
+    font-family: 'AvenirBold';
+    src: url('fonts/Avenir LT Std 85 Heavy/Avenir LT Std 85 Heavy.otf');
 }
 
 @font-face {
     font-family: 'AvenirBolder';
-    src: url('Avenir LT Std 95 Black.otf');
+    src: url('fonts/Avenir LT Std 95 Black/Avenir LT Std 95 Black.otf');
 }
+
+@font-face {
+    font-family: 'AvenirMedium';
+    src: url('fonts/Avenir LT Std 65 Medium/Avenir LT Std 65 Medium.otf');
+}
+
+
 
 * {
     text-align: center;
-    font-family: 'AvenirBold', 'Arial', sans-serif;
+    font-family: 'AvenirBold', 'Avenir LT Std', sans-serif;
 }
+
 
 header {
     background-color: #18233B;
@@ -45,25 +57,24 @@ body::-webkit-scrollbar {
 /*Swiper Module*/
 .swiper {
     position: absolute;
-    top: 70px;
+    bottom: 0px;
     width: 100%;
-    height: 100vh;} 
+    overflow: hidden;
+    height: 90vh;} 
     @media (max-width:1536px) {
         .swiper {
-            top: 70px;
-            height: 92vh;
+            bottom: 0px;
+            height: 90vh;
             width: 1536px;
         }}
     @media (max-width:1080px) {
         .swiper {
-            top: 70px;
-            height: 95vh;
+            height: 90vh;
             width: 1080px;
         }}
     @media (max-width:720px) {
         .swiper {
-            top: 70px;
-            height: 95vh;
+            height: 90vh;
             width: 720px;
         }}
 
@@ -98,7 +109,7 @@ body::-webkit-scrollbar {
     top: 27vh;
     font-size: 80px;
     line-height: 85px;
-    font-weight: bold;
+    font-weight: normal;
     letter-spacing: 3px;
     z-index: 2;}
     @media(max-height:800px) { .swiper-slide .text{
@@ -144,11 +155,11 @@ body::-webkit-scrollbar {
     right:300px;
     bottom: 580px;
     width: 100%;
-    z-index: -2;
+    z-index: -1;
 }
 #bgvideo3 {
     width:100%;
-    z-index:-3;
+    z-index: -1;
 }
 
 .page2 {
@@ -159,10 +170,11 @@ body::-webkit-scrollbar {
     font-weight: none;
     background-color: rgba(255, 255, 255, 0.28);
     border-radius: 300px;
-    width: 1050px;
+    /*width: 65%;*/
+    width: 1000px;
     padding: 10px 40px 0 40px;
     height: 60px;
-    bottom: 25%;}
+    bottom: 240px;}
     @media(max-height: 863px) {
         .page2 {
             bottom: 180px;
@@ -178,6 +190,7 @@ body::-webkit-scrollbar {
     }
     .page2 span{
         font-weight: bold;
+        transition: all 0.25s ease-in-out;
         font-size: 27px;
     } .page2 span.bar {
         color: #7EE6FF; }
@@ -190,10 +203,10 @@ body::-webkit-scrollbar {
     font-weight: none;
     background-color: rgba(255, 255, 255, 0.28);
     border-radius: 300px;
-    width: 1050px;
+    width: 1000px;
     padding: 10px 40px 0 40px;
     height: 60px;
-    bottom: 25%;}
+    bottom: 240px;}
     @media(max-height: 863px) {
         .page3 {
             bottom: 180px;
@@ -247,7 +260,7 @@ body::-webkit-scrollbar {
     margin: 7vh auto auto auto;
     background-color: #4AB3E2;
     transition: all 0.5s ease-in;
-    width: 100%;
+    width: 80%;
     margin-top: 7vh;
     padding: 15px 0;
     font-size: 20px;
@@ -273,14 +286,20 @@ body::-webkit-scrollbar {
     .quote .quotee {
         font-weight: normal;
     }
+
 .centered {
     margin: auto;
 }
 
+#placeholder {
+    margin-top: 25px;
+    width: 800px;
+}
 
 #page5 .title {
-    margin-top: 50px;
+    margin-top: 25px;
     font-weight: bold;
+    width: 65%;
     font-size: 48px;}
 
 #page5 span.subtitle {
@@ -294,19 +313,54 @@ body::-webkit-scrollbar {
     text-align: right;}
 #page5 p {
     margin: 50px auto;
-    max-width: 1250px;
+    font-family: 'AvenirMedium';
+    max-width: 1260px;
     text-align: left;}
 #page5 .row{
     max-width: 1300px;
-    margin: 80px auto auto auto;
+    margin: 25px auto auto auto;
+}
+    @media(max-height: 736px) {
+        @media(max-width: 1536px) {
+            #page5 p {
+                margin: 20px auto;
+            }
+        }
+    }
+
+#page6 {
+   background-color: #161B26;
+}
+#page6 .white{
+    background-color: white;    
+}
+#page6 .stacked {
+    margin-top: auto;
 }
 
-
-
 #page6 .row{
+    text-align: center;
     margin: 6% auto;
     max-width: 1050px;
 }
+#page6 h3 {
+    font-size: 15px;
+    text-align: left;
+    max-width: 400px;
+    margin: 10px auto 50px;
+}
+#page6 .subtitle {
+    max-width: 400px; 
+    margin: 0 auto auto auto;
+}
+#page6 #fd-vid {
+    margin: auto auto auto 45px;
+}
+#page6 #lump{
+    margin: auto 15px auto auto;
+    max-width: 395px;
+}
+
 
 #page7 div.title {
     font-size: 40px;
@@ -625,6 +679,7 @@ button.mfp-close {
     }
 /*Text Animation on first page*/
 .stretch {
+    font-family: "AvenirBolder";
     transition: all 0.15s linear;
     color: #7EE6FF;
     z-index: 999999999;
@@ -637,7 +692,7 @@ button.mfp-close {
 /*Navbar Module*/
 .navbar-custom {
     background: #080808;
-    height: 70px;
+    height: 10vh;
     font-family: "Poppins", serif;
 }
 .navbar-brand img{
