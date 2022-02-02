@@ -260,7 +260,7 @@ body::-webkit-scrollbar {
     margin: 7vh auto auto auto;
     background-color: #4AB3E2;
     transition: all 0.5s ease-in;
-    width: 80%;
+    width: 100%;
     margin-top: 7vh;
     padding: 15px 0;
     font-size: 20px;
@@ -298,6 +298,7 @@ body::-webkit-scrollbar {
 
 #page5 .title {
     margin-top: 25px;
+    height: 80px;
     font-weight: bold;
     width: 65%;
     font-size: 48px;}
@@ -326,6 +327,11 @@ body::-webkit-scrollbar {
                 margin: 20px auto;
             }
         }
+    }
+#page5 .title .col-xs-6 {
+    transition: all 0.25s ease-in-out;}
+    #page5 .title .col-xs-4:hover { 
+        font-size: 52px;
     }
 
 #page6 {
