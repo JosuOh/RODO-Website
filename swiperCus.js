@@ -1,10 +1,18 @@
+//Glitches: 
+//      - Swiper Double Scrolls through some slides... Why?
+//      - White Background (looks like from vid 3) flickers into the lower pages... why?
+//      - Sometimes the videos don't play again after going back into viewBox 
+//      - Possibly because of incorrect Swiper Size
+//      - Video doesn't resize smoothly. Possibly because of wrong comparison
+
+
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     slidesPerView: 1,
     direction: 'vertical',
     loop: false,
     centeredSlides: true,  
-    //autoHeight: true,
+    speed: 500,
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
@@ -41,11 +49,12 @@ const swiper = new Swiper('.swiper', {
     breakpoints: {
 
       480: {
-        noSwiping: true
+        noSwiping: false,
+        grabCursor: true
       },
   
       992: {
-        noSwiping: true
+        noSwiping: false
       },
   
       1024: {
@@ -107,10 +116,15 @@ const swiper = new Swiper('.swiper', {
 
 var isInViewport = function (elem) {
 	var distance = elem.getBoundingClientRect();
+  console.log(window.innerHeight);
+  console.log(document.documentElement.clientHeight);
+  console.log(distance.top);
+  console.log(distance.left);
+
 	return (
 		distance.top >= 0 &&
 		distance.left >= 0 &&
-		distance.bottom <= (window.innerHeight || document.documentElement.clientHeight) 
+    distance.bottom <= (window.innerHeight + 330 || document.documentElement.clientHeight + 330) 
 		//distance.right <= (window.innerWidth || document.documentElement.clientWidth)
 	);
 };
@@ -138,7 +152,7 @@ document.addEventListener('click', function() {mfp_container = document.querySel
 
 
 
-/*
+
 window.addEventListener('load', function () {
   document.addEventListener('click', function() {
     if(isInViewport(page_3)) {
@@ -182,7 +196,7 @@ window.addEventListener('load', function () {
       pauseVid3();
     }
   }, false); 
-*/
+
   swiper.on('transitionEnd', function() {
     if(isInViewport(page_4)) {
       document.querySelector(".quote").style.width = "100%";
@@ -190,7 +204,7 @@ window.addEventListener('load', function () {
     } 
   }, false);
 
-//});
+});
 
 /*
 swiper.on('transitionEnd', function() {
