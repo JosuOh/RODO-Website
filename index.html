@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html>
+<!--TODO:  
+        - Fix Navbar Collapsed form and before collapsing form
+        - Change to Mobile form at breakpoint
+        - Adjust Scalings
+-->
+
 <head>
     <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
@@ -48,40 +54,40 @@
     
 </head>
 
-<header>
-  <nav class="navbar navbar-fixed-top navbar-custom">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="https://rodo-medical.github.io/Smileloc-Website/"><img src="rodomedical-logo.png"></a>
-    </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      
-      <ul class="nav navbar-nav mr-auto navbar-right">
-        <li><a href="#">THE Technology</a></li>
-        <li><a href="#">THE Team</a></li>
-        <li><a href="#">THE Resources</a></li>
-        <li><a href="#"><i class="fa-brands fa-facebook-square"></i></a></li>
-        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-        <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
-        <li><button onclick="location.href='mailto:info@rodomedical.com'" type="button" class="contact btn btn-sm">Contact Us</button></li>
-      </ul>
-      
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-</header>
+
 
 <body class="scroll-stop">
+    <nav class="navbar navbar-fixed-top navbar-custom">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" id="nav-logo" href="#page1"><img src="http://rodomedical.com/compiled/images/rodomedical-logo.png"></a>
+          </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      
+            <ul class="nav navbar-nav mr-auto navbar-right">
+              <li><a href="#">THE Technology</a></li>
+              <li><a href="#">THE Team</a></li>
+              <li><a href="#">THE Resources</a></li>
+              <li><a href="#"><i class="fa-brands fa-facebook-square"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
+              <li><button onclick="location.href='mailto:info@rodomedical.com'" type="button" class="contact btn btn-sm">Contact Us</button></li>
+            </ul>
+            
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav> 
 <!-- Slider main container -->
-<div class="swiper">
+<div class="swiper swiper-main">
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper swiper-no-swiping">
     <!-- Slides -->
@@ -92,27 +98,31 @@
         <video playsinline autoplay muted loop id="bgvideo">
             <source src="Smileloc in Action Page1.mp4" type="video/mp4">
         </video>
-
+        
         <a href="#c-video" id="video-link" class="play-btn more" onclick="loadVid();"><i class="fas fa-play" aria-hidden="true"></i>&nbsp;&nbsp; Play full video &nbsp;<i id="arrow" class="fas fa-chevron-right"></i></a>
-        <div id="c-video" class="mfp-with-zoom mfp-hide" style="max-width: 75%; margin: 0 auto;">
+        <div id="c-video" class="container-fluid mfp-with-zoom mfp-hide" style="max-width: 75%; margin: 0 auto;">
                 <video playsinline controls id="promo-video" class="pop-vid" src="RODO - 30 Second Promo - RODO Only2.mp4" >
                 </video>
         </div>  
     </div>
     <div class="swiper-slide" id="page2">
-            <video playsinline muted loop id="bgvideo2">
+        <div class="video-wrapper">
+            <video playsinline  muted loop id="bgvideo2">
                 <source src="Full Arch Compressed.mp4" type="video/mp4">
             </video>
             <div class="page2">
                 <span>No screws. No cement. </span><span class="bar">|</span> <span class="smaller">Delivery of Final Restoration with Smileloc®</span>
             </div>
+        </div>
     </div>
     <div class="swiper-slide" id="page3">
-        <video playsinline loop id="bgvideo3">
-            <source src="Maggie Removal page3 Compressed.mp4" type="video/mp4">
-        </video>
-        <div class="page3">
-            <span>Removal of Prosthesis</span> <span class="bar">|</span> <span class="smaller">Done within minutes with Smilekey® </span>
+        <div class="video-wrapper">
+            <video playsinline loop id="bgvideo3">
+                <source src="Maggie Removal page3 Compressed.mp4" type="video/mp4">
+            </video>
+            <div class="page3">
+                <span>Removal of Prosthesis</span> <span class="bar">|</span> <span class="smaller">Done within minutes with Smilekey® </span>
+            </div>
         </div>
     </div>
     <div id="page4" class="swiper-slide">
@@ -121,8 +131,8 @@
         <div id="million"> 40,000,000</div>
             <p>Edentulous population in North America who need an <span class="org-text">affordable</span>, <br>
             <span class="org-text">durable</span>, <span class="org-text">long term solution</span> with Smileloc?</p>
-        <div class="quote">“The Smileloc solutions enable us to present affordable treatment options to patient without 
-                                compromising clinical outcome.” <br><span class="quotee">Dr. Michael Pikos, Pikos Institute</span></div>
+        <div class="quote"><div class="quote-text">“The Smileloc solutions enable us to present affordable treatment options to patient without 
+                        compromising clinical outcome.” <br><span class="quotee">Dr. Michael Pikos, Pikos Institute</span></div></div>
         </div>
     </div>
     <div class="swiper-slide" id="page5">
@@ -182,7 +192,7 @@
                     <a href="#single-del" class="button more popup" id="sd-vid"><img class="pop-thumbnail" width="600" height="337" src="Delivery.PNG"/>
                             <img width="600" height="auto" class="gif" src="Scan and Delivery.gif"/></a>
                     <div id="single-del" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
-                        <video playsinline controls class="pop-vid" src="Leo Single PlaceHA_Scan_Delivery2.mp4" >
+                        <video playsinline controls class="pop-vid" src="Leo Single Delivery.mp4" >
                         </video>
                     </div>
                     <div class="subtitle left-align">Single Crown Scan and Delivery by Dr. Leo Yang</div>
@@ -191,7 +201,7 @@
                     <a href="#single-rem" class="button more popup" id="sr-vid"><img class="pop-thumbnail" width="600" height="336" src="Removal.PNG">
                             <img width="600" height="auto" class="gif" src="Removal.gif"/></a>
                     <div id="single-rem" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
-                        <video playsinline controls class="pop-vid" src="Leo Single Removal video2.mp4" >
+                        <video playsinline controls class="pop-vid" src="Leo Single Removal.mp4" >
                         </video>
                     </div>
                     <div class="subtitle right-align">Single Crown Removal by Dr. Leo Yang</div>
@@ -386,7 +396,7 @@
         <h1> What experts say<br> </h1>
         <div class="row">
             <div class="vidPic col-xs-4">
-                <a href="#curtis" class="button more" id="cj-vid"> <img src="PastedGraphic-8.png"> </a>
+                <a href="#curtis" class="button more" id="cj-vid"> <img class="pop-thumbnail" src="PastedGraphic-8.png"> </a>
                 <p><span>Dr. Curtis Jansen</span><br>Smileloc Procedural Video</p>
                 <div id="curtis" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
 
@@ -398,7 +408,7 @@
                 </div>
             </div>  
             <div class="vidPic col-xs-4">  
-                <a href="#leoyang" class="button more" id="ly-vid" onclick="loadVid();"><img src="PastedGraphic-9.png"></a>
+                <a href="#leoyang" class="button more" id="ly-vid" onclick="loadVid();"><img class="pop-thumbnail" src="PastedGraphic-9.png"></a>
                 <p><span>Dr. Leo Yang</span><br>Smileloc Delivery and Removal Video</p>
                 <div id="leoyang" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
                     <video playsinline controls id="ly-inter" class="pop-vid" src="RODO - Dr. Leo Yang - Interview Compressed.mp4" >
@@ -406,7 +416,7 @@
                 </div>
             </div>
             <div class="vidPic col-xs-4">
-                <a href="#stevelim" class="button more" id="sl-vid" onclick="loadVid();"><img src="PastedGraphic-10.png"></a>
+                <a href="#stevelim" class="button more" id="sl-vid" onclick="loadVid();"><img class="pop-thumbnail" src="PastedGraphic-10.png"></a>
                 <p><span>Dr. Steve Lim</span><br>Center for Advanced Dentistry Video</p>
                 <div id="stevelim" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
                     <video playsinline controls id="sl-inter" class="pop-vid" src="Center For Advanced Dentistry Steve Lim.mp4" >
@@ -416,7 +426,7 @@
         </div>
         <div class="row">
             <div class="vidPic col-xs-4">
-                <a href="#kowalski" class="button more" id="bjk-vid"><img src="PastedGraphic-11.png"></a>
+                <a href="#kowalski" class="button more" id="bjk-vid"><img class="pop-thumbnail" src="PastedGraphic-11.png"></a>
                 <p><span>BJ Kowalski, President of ROE Dental Laboratory</span><br>We're changing the HOLE Dentistry: Smileloc</p>
                 <div id="kowalski" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
                     
@@ -427,7 +437,7 @@
                 </div>
             </div>
             <div class="vidPic col-xs-4">
-                <a href="#youngseo" class="button more" id="ys-vid"><img src="PastedGraphic-12.png"></a>
+                <a href="#youngseo" class="button more" id="ys-vid"><img class="pop-thumbnail" src="PastedGraphic-12.png"></a>
                 <p><span>Young Seo, CEO of RODO Medical</span><br>ROE Reviews - Smileloc by RODO</p>
                 <div id="youngseo" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
                     
@@ -438,7 +448,7 @@
                 </div>
             </div>
             <div class="vidPic col-xs-4">
-                <a href="#grantolsen" class="button more" id="go-vid"><img src="PastedGraphic-13.png"></a>
+                <a href="#grantolsen" class="button more" id="go-vid"><img class="pop-thumbnail" src="PastedGraphic-13.png"></a>
                 <p><span>Dr. Grant Olsen</span><br>Changing the HOLE Industry with Smileloc</p>
                 <div id="grantolsen" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
                     
@@ -786,7 +796,7 @@
 
         <button class="contact btn btn-sm">Contact Us</button>
         <div class="located">
-            <img class="logo" src="rodomedical-logo-sm.png">
+            <img class="logo" src="http://rodomedical.com/compiled/images/rodomedical-logo.png">
             &nbsp;
             RODO Medical, Inc. 2635 N. First St. Suite 218, San Jose, CA 95134
         </div>
@@ -799,6 +809,9 @@
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script type="text/javascript">
+    playfirst = function() {
+        document.getElementById();
+    };
 
     /*Initiates Magnific Popup*/
     $('#video-link').magnificPopup({
@@ -859,6 +872,7 @@
     });
 
     </script>
+    <script src="swiperCus.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="https://getbootstrap.com/docs/3.3/dist/js/bootstrap.min.js"></script>
@@ -866,7 +880,7 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="https://getbootstrap.com/docs/3.3/assets/js/ie10-viewport-bug-workaround.js"></script>
      <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
-     <script src="swiperCus.js"></script>
+
 </body>
 
 <footer>
