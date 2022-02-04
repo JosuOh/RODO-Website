@@ -1,11 +1,5 @@
 <!DOCTYPE html>
 <html>
-<!--TODO:  
-        - Fix Navbar Collapsed form and before collapsing form
-        - Change to Mobile form at breakpoint
-        - Adjust Scalings
--->
-
 <head>
     <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
@@ -54,40 +48,40 @@
     
 </head>
 
+<header>
+  <nav class="navbar navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://rodo-medical.github.io/Smileloc-Website/"><img src="rodomedical-logo.png"></a>
+    </div>
 
-
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      
+      <ul class="nav navbar-nav mr-auto navbar-right">
+        <li><a href="#">THE Technology</a></li>
+        <li><a href="#">THE Team</a></li>
+        <li><a href="#">THE Resources</a></li>
+        <li><a href="#"><i class="fa-brands fa-facebook-square"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
+        <li><button onclick="location.href='mailto:info@rodomedical.com'" type="button" class="contact btn btn-sm">Contact Us</button></li>
+      </ul>
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</header>
 
 <body class="scroll-stop">
-    <nav class="navbar navbar-fixed-top navbar-custom">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" id="nav-logo" href="#page1"><img src="http://rodomedical.com/compiled/images/rodomedical-logo.png"></a>
-          </div>
-      
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      
-            <ul class="nav navbar-nav mr-auto navbar-right">
-              <li><a href="#">THE Technology</a></li>
-              <li><a href="#">THE Team</a></li>
-              <li><a href="#">THE Resources</a></li>
-              <li><a href="#"><i class="fa-brands fa-facebook-square"></i></a></li>
-              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-              <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
-              <li><button onclick="location.href='mailto:info@rodomedical.com'" type="button" class="contact btn btn-sm">Contact Us</button></li>
-            </ul>
-            
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav> 
 <!-- Slider main container -->
-<div class="swiper swiper-main">
+<div class="swiper">
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper swiper-no-swiping">
     <!-- Slides -->
@@ -98,31 +92,27 @@
         <video playsinline autoplay muted loop id="bgvideo">
             <source src="Smileloc in Action Page1.mp4" type="video/mp4">
         </video>
-        
+
         <a href="#c-video" id="video-link" class="play-btn more" onclick="loadVid();"><i class="fas fa-play" aria-hidden="true"></i>&nbsp;&nbsp; Play full video &nbsp;<i id="arrow" class="fas fa-chevron-right"></i></a>
-        <div id="c-video" class="container-fluid mfp-with-zoom mfp-hide" style="max-width: 75%; margin: 0 auto;">
+        <div id="c-video" class="mfp-with-zoom mfp-hide" style="max-width: 75%; margin: 0 auto;">
                 <video playsinline controls id="promo-video" class="pop-vid" src="RODO - 30 Second Promo - RODO Only2.mp4" >
                 </video>
         </div>  
     </div>
     <div class="swiper-slide" id="page2">
-        <div class="video-wrapper">
-            <video playsinline  muted loop id="bgvideo2">
+            <video playsinline muted loop id="bgvideo2">
                 <source src="Full Arch Compressed.mp4" type="video/mp4">
             </video>
             <div class="page2">
                 <span>No screws. No cement. </span><span class="bar">|</span> <span class="smaller">Delivery of Final Restoration with Smileloc®</span>
             </div>
-        </div>
     </div>
     <div class="swiper-slide" id="page3">
-        <div class="video-wrapper">
-            <video playsinline loop id="bgvideo3">
-                <source src="Maggie Removal page3 Compressed.mp4" type="video/mp4">
-            </video>
-            <div class="page3">
-                <span>Removal of Prosthesis</span> <span class="bar">|</span> <span class="smaller">Done within minutes with Smilekey® </span>
-            </div>
+        <video playsinline loop id="bgvideo3">
+            <source src="Maggie Removal page3 Compressed.mp4" type="video/mp4">
+        </video>
+        <div class="page3">
+            <span>Removal of Prosthesis</span> <span class="bar">|</span> <span class="smaller">Done within minutes with Smilekey® </span>
         </div>
     </div>
     <div id="page4" class="swiper-slide">
@@ -131,160 +121,73 @@
         <div id="million"> 40,000,000</div>
             <p>Edentulous population in North America who need an <span class="org-text">affordable</span>, <br>
             <span class="org-text">durable</span>, <span class="org-text">long term solution</span> with Smileloc?</p>
-        <div class="quote"><div class="quote-text">“The Smileloc solutions enable us to present affordable treatment options to patient without 
-                        compromising clinical outcome.” <br><span class="quotee">Dr. Michael Pikos, Pikos Institute</span></div></div>
+        <div class="quote">“The Smileloc solutions enable us to present affordable treatment options to patient without 
+                                compromising clinical outcome.” <br><span class="quotee">Dr. Michael Pikos, Pikos Institute</span></div>
         </div>
-    </div>
-    <div class="swiper-slide" id="page5">
+    </div><div class="swiper-slide" id="page5">
         <div class="centered">
+            <img id="placeholder" src="SVG-placeholder.PNG">
             <div class="title row">
-                <div class="svg-wrapper col-xs-4">
-                    <svg class="clip" height="50" width="900" stroke="gray" fill="gray">
-                        <rect width="220" height="2" x="60" y="30"/>
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="29.757" height="50.541" viewBox="0 0 29.757 50.541">
-                        <g id="Group_79" data-name="Group 79" transform="translate(81.122 -284.22)">
-                        <path id="Path_589" data-name="Path 589" d="M-22.8,304.85c-.19,1.786-.4,3.777-.623,5.868" transform="translate(-33.023 -11.241)" fill="none" stroke="#7ee6ff" stroke-miterlimit="10" stroke-width="3"/>
-                        <line id="Line_23" data-name="Line 23" x1="0.647" y1="5.415" transform="translate(-77.265 297.658)" fill="none" stroke="#7ee6ff" stroke-miterlimit="10" stroke-width="3"/>
-                        <path id="Path_590" data-name="Path 590" d="M-28.119,355.79c-.219,2.1-.417,4.021-.581,5.637" transform="translate(-29.921 -41.174)" fill="none" stroke="#7ee6ff" stroke-miterlimit="10" stroke-width="3"/>
-                        <line id="Line_24" data-name="Line 24" x1="0.668" y1="5.629" transform="translate(-74.893 317.515)" fill="none" stroke="#7ee6ff" stroke-miterlimit="10" stroke-width="3"/>
-                        <path id="Path_591" data-name="Path 591" d="M-64.94,383.25a9.15,9.15,0,0,0,1.588,3.109,6.034,6.034,0,0,0,5.452,2.6c4.99-.553,7.085-4.008,7.456-8.388" transform="translate(-8.626 -55.736)" fill="none" stroke="#7ee6ff" stroke-miterlimit="10" stroke-width="3"/>
-                        <path id="Path_592" data-name="Path 592" d="M-25.524,331.07c-.2,1.847-.392,3.707-.586,5.518" transform="translate(-31.443 -26.648)" fill="none" stroke="#7ee6ff" stroke-miterlimit="10" stroke-width="3"/>
-                        <line id="Line_25" data-name="Line 25" x1="0.676" y1="5.678" transform="translate(-76.085 307.535)" fill="none" stroke="#7ee6ff" stroke-miterlimit="10" stroke-width="3"/>
-                        <path id="Path_593" data-name="Path 593" d="M-76.5,292.924l-.858-7.2h23.708s-.132,1.25-.355,3.3" transform="translate(-1.327)" fill="none" stroke="#7ee6ff" stroke-miterlimit="10" stroke-width="3"/>
-                        <path id="Path_594" data-name="Path 594" d="M-54.98,293.412a71.869,71.869,0,0,1-22.849,4.029,2.023,2.023,0,0,0-1.769,2.4,2.572,2.572,0,0,0,2.333,2.332s11.856-.15,22.284-4.382c0,0,2.252-.593,2.1-2.587A1.875,1.875,0,0,0-54.98,293.412Z" transform="translate(0 -4.517)" fill="none" stroke="#7ee6ff" stroke-miterlimit="10" stroke-width="3"/>
-                        <path id="Path_595" data-name="Path 595" d="M-54.828,318.919s-11.381,3.66-20.172,3.6c0,0-2.21.27-1.819,2.334a2.3,2.3,0,0,0,2.008,2.12,58.394,58.394,0,0,0,19.46-3.107s3.633-.909,2.964-3.308S-54.828,318.919-54.828,318.919Z" transform="translate(-1.618 -19.44)" fill="none" stroke="#7ee6ff" stroke-miterlimit="10" stroke-width="3"/>
-                        <path id="Path_596" data-name="Path 596" d="M-54.427,344.4s-10.478,3.161-17.858,3.275c0,0-2.694.393-1.857,2.847s7.94,2.183,19.226-1.446c0,0,3.369-.45,3.06-2.793A2.1,2.1,0,0,0-54.427,344.4Z" transform="translate(-3.123 -34.46)" fill="none" stroke="#7ee6ff" stroke-miterlimit="10" stroke-width="3"/>
-                        <path id="Path_597" data-name="Path 597" d="M-53.99,369.454s-9.1,2.831-15.6,2.89c0,0-2.707.617-2.038,2.57a2.7,2.7,0,0,0,2.7,1.8s10.546-.88,14.495-2.68a3.065,3.065,0,0,0,2.889-2.413C-51.1,369.279-53.99,369.454-53.99,369.454Z" transform="translate(-4.632 -49.202)" fill="none" stroke="#7ee6ff" stroke-miterlimit="10" stroke-width="3"/>
-                        </g>
-                    </svg> 
-                </div>
-                <div class="svg-wrapper col-xs-4">
-                    <svg class="clip" height="50" width="900" stroke="gray" fill="gray">
-                        <rect width="200" height="2" x="100" y="30"/>
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="67.158" height="45.723" viewBox="0 0 67.158 45.723">
-                        <g id="Group_78" data-name="Group 78" transform="translate(560.884 -299.391) rotate(30)">
-                        <path id="Path_585" data-name="Path 585" d="M-197.265,549.673l-2.938,5.878-1.155,2.31h-25.923a21.754,21.754,0,0,1-6.537-1.8l0-10.425.009,4.038Z" transform="translate(-72.822 -7.537)" fill="#ffbe29" stroke="#ffbe29" stroke-miterlimit="10" stroke-width="3"/>
-                        <path id="Path_586" data-name="Path 586" d="M-191.194,537.411l-2.563,4.725h-40.057l-.009-4.038a51.612,51.612,0,0,1,9.313-1.92C-215.017,535.04-191.194,537.411-191.194,537.411Z" transform="translate(-72.822 0)" fill="none" stroke="#ffbe29" stroke-miterlimit="10" stroke-width="3"/>
-                        <path id="Path_587" data-name="Path 587" d="M-77.523,563.325l-2.682,5.946-6.327-.068,2.938-5.878Z" transform="translate(-186.493 -21.189)" fill="none" stroke="#ffbe29" stroke-miterlimit="10" stroke-width="3"/>
-                        <path id="Path_588" data-name="Path 588" d="M-306.641,556.06c-3.006-1.185-5.832-2.515-6.464-2.515h-8.845c-.057-.76-1.171-.936-1.171-.936h-2.107a1.476,1.476,0,0,0-.58.694c-.189.475-1.139.758-1.8.664s-.568-1.71-.568-1.71l4.839-4.839H-311a21.385,21.385,0,0,1,4.355-1.783Z" transform="translate(0 -7.537)" fill="none" stroke="#ffbe29" stroke-miterlimit="10" stroke-width="3"/>
-                        </g>
-                    </svg>
-                </div>
-                <div class="svg-wrapper col-xs-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="52.002" height="41.324" viewBox="0 0 52.002 41.324">
-                        <g id="Group_80" data-name="Group 80" transform="translate(96.175 373.37)">
-                        <path id="Path_598" data-name="Path 598" d="M-31.771-360.126c10.981,2.348,20.229-21,31.428,0,3.111,5.832-1.734,16.662-6.208,24.53" transform="translate(-47.816 -0.583)" fill="none" stroke="#36f294" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6"/>
-                        <path id="Path_599" data-name="Path 599" d="M-85.879-336.129c-4.5-8.037-9.427-19.353-6.3-26.175,7.267-15.832,21.915-3.316,21.915-3.316" transform="translate(0 0)" fill="none" stroke="#36f294" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6"/>
-                        <path id="Path_600" data-name="Path 600" d="M-59.47-221.3a50.982,50.982,0,0,1,31.512-.05" transform="translate(-26.409 -114.828)" fill="none" stroke="#36f294" stroke-miterlimit="10" stroke-width="6"/>
-                        </g>
-                    </svg>
-                </div>
-            </div>
-            <div class="title row words">
                     <div class="col-xs-4">Surgery</div> 
                     <div class="col-xs-4">Scan</div>
                     <div class="col-xs-4">Delivery</div>
             </div>
             <div class="row">
                 <div class="col-xs-6">    
-                    <a href="#single-del" class="button more popup" id="sd-vid"><img class="pop-thumbnail" width="600" height="337" src="Delivery.PNG"/>
-                            <img width="600" height="auto" class="gif" src="Scan and Delivery.gif"/></a>
+                    <a href="#single-del" class="button more" id="sd-vid"><img width="600" height="auto" src="Delivery.PNG"></a>
                     <div id="single-del" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
                         <video playsinline controls class="pop-vid" src="Leo Single Delivery.mp4" >
                         </video>
                     </div>
-                    <div class="subtitle left-align">Single Crown Scan and Delivery by Dr. Leo Yang</div>
+                    <div class="subtitle left">Single Crown Scan and Delivery by Dr. Leo Yang</div>
                 </div>
                 <div class="col-xs-6">
-                    <a href="#single-rem" class="button more popup" id="sr-vid"><img class="pop-thumbnail" width="600" height="336" src="Removal.PNG">
-                            <img width="600" height="auto" class="gif" src="Removal.gif"/></a>
+                    <a href="#single-rem" class="button more" id="sr-vid"><img width="600" height="auto" src="Removal.PNG"></a>
                     <div id="single-rem" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
                         <video playsinline controls class="pop-vid" src="Leo Single Removal.mp4" >
                         </video>
                     </div>
-                    <div class="subtitle right-align">Single Crown Removal by Dr. Leo Yang</div>
+                    <div class="subtitle right">Single Crown Removal by Dr. Leo Yang</div>
                 </div>
             </div>
-            <p>Single crowns and two-unit bridges with Smileloc can be done from surgery to final delivery with only THREE appointments.
-                  (1) At implant surgery, RODO Healing Abutment is placed instead of conventional healing caps.  RODO Healing Abutment 
-                  shapes soft tissue perfectly matching RODO abutments of any gingival height.  (2) At the second appointment, RODO Healing
-                  Abutment can be intra-orally scanned to be sent to RODO Digital Prosthetics (RDP) to be processed for final prosthesis.  
-                  (3) Within five days, the final crown will be sent to restoring dentist with printed model, RODO abutment and Smileloc for 
-                  hassle-free and clean delivery.  The dentist chair-time will be less than 5 minutes and there is neither cement clean-up nor 
-                  filling up the screw access hole.  The whole process is fully digitally processed from start to finish, and checked for 
-                  consistent quality and accuracy less than 25 microns to ensure predictable delivery at the final crown appointment.</p>
+            <p>Single crowns and two-unit bridges with Smileloc can be done from surgery to final delivery with only THREE appointments.  
+                (1) At implant surgery, RODO Healing Abutment is placed instead of conventional healing caps.  RODO Healing Abutment shapes 
+                soft tissue perfectly matching RODO abutments of any gingival height.  (2) At the second appointment, RODO Healing Abutment 
+                can be intra-orally scanned to be sent to RODO Digital Prosthetics (RDP) to be processed for final prosthesis.  
+                (3) Within five days, the final crown will be sent to restoring dentist with printed model, RODO abutment and Smileloc for hassle-free and clean delivery.  
+                The dentist chair-time will be less than 5 minutes and there is neither cement clean-up nor filling up the screw access hole.  
+                The whole process is fully digitally processed from start to finish, and checked for consistent quality and accuracy less than 25 microns to ensure 
+                predictable delivery at the final crown appointment.</p>
         </div>
-    </div>
+    </div><!---
     <div class="swiper-slide" id="page6">
         <div class="row">
             <div class="col-xs-6 white">
                 <div class="row">
-                    <span class="top-text">The Technology (Placeholder Text)</span> <br>
-                    <span class="subtext">Possible Placeholder text to make this page look more balanced.</span>
-                </div>
-                <div class="row">
-                    <div class="right-align col-xs-3">
-                        <div class="row nested-row" style="margin: 40px 0 80px;">
-                            Crown
+                    <div class="col-xs-6">
+                        <div class="row">
+                            <img width="80" src="Crown.png">
                         </div>
-                        <div class="row nested-row" style="margin: 0 0 100px;">
-                            RODO Abutment and Smileloc
+                        <div class="row">
+                            <img width="160" src="New S-Series Iso - 2 mm GH.JPG">
                         </div>
-                        <div class="row nested-row">
-                            Implant <br><span class="subtext">*Not Included</span>
+                        <div class="row">
+                            <img width="70" src="Implant.png">
                         </div>
                     </div>
-                    <div class="centered col-xs-3">
-                        <div class="row nested-row">
-                            <img width="50" src="Crown.png" style="height: 80px; width:  auto;">
-                        </div>
-                        <div class="row nested-row">
-                            <img width="50" src="New S-Series Iso - 2 mm GH.JPG" style="height: 125px; width: auto;">
-                        </div>
-                        <div class="row nested-row">
-                            <img width="50" src="Implant.png" style="width: 60px;">
-                        </div>
-                    </div>
-                    <div class="centered svg-over">
-                        <svg height="260" width="80">
-                            <rect x="30" y="0" width="30" height="2"/>
-                            <rect x="30" y="0" width="2" height="260"/>
-                            <rect x="0" y="128" width="30" height="2"/>
-                            <rect x="30" y="258" width="30" height="2"/>
-                        </svg>
-                    </div>
-                    <div class="centered col-xs-3">
-                        <div class="row nested-row">
-                            <img width="50" src="Multi Unit Coping.jpg" style="height: 90px; width:  auto;">
-                        </div>
-                        <div class="row nested-row"> 
-                            <img width="50" src="Unlocked - Side.JPG" style="height: 80px; width: auto; margin: 10px 0 25px 0;">
-                        </div>
-                        <div class="row stacked nested-row" style="height: 125px;">
-                            <img class="abutment" width="50" src="Abutment - 500 Series.JPG" style="width: 68px; right: 27px;">
-                            <img class="abutment" width="50" style="width: 75px;opacity: 0.5;right: 33px;" src="Abutment - 517 Series Assembled.JPG">
-                            <img class="abutment" width="50" style="opacity: 0.5;width: 75px;" src="Abutment - 530 Series Assembled.JPG">
-                        </div>
-                    </div>
-                    <div class="col-xs-3 left-align">
-                        <div class="row nested-row" style="margin: 40px 0 80px;">
-                            Coping
-                        </div>
-                        <div class="row nested-row" style="margin: 0 0 100px;">
-                            Smileloc <br><span class="subtext">(Nitinol Sleeve)</span>
-                        </div>
-                        <div class="row nested-row">
-                            RODO Abutment
+                    <div class="col-xs-6">
+                        <div class=stacked>
+                            <img width="70" src="Abutment - 500 Series.JPG">
+                            <img width="70" src="Abutment - 517 Series Assembled.JPG">
+                            <img width="70" src="Abutment - 530 Series Assembled.JPG">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-xs-6">
-                <a href="#final-del" class="button more" id="fd-vid"><img class="pop-thumbnail" width="500" height="auto" src="https://raw.githubusercontent.com/RODO-Medical/Smileloc-Website/main/SS2.PNG"></a>
+                <a href="#final-del" class="button more" id="fd-vid"><img width="600" height="auto" src="SS2.png"></a>
                     <div id="final-del" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
-                        <video playsinline="" controls="" class="pop-vid" src="RODO - Dr. Leo Yang - Demo Full Video.mp4">
+                        <video playsinline controls class="pop-vid" src="RODO - Dr. Leo Yang - Final.mp4" >
                         </video>
                     </div>
                 <h3>Dr. Leo Yang Final Delivery with Smileloc</h3>
@@ -293,17 +196,14 @@
                     <div class="col-xs-6">Locked View</div> 
                     <div class="col-xs-6">Unlocked View</div>
                 </div>
-                <img>
-                <img>
-                <img>
             </div> 
         </div>
-    </div>
+    </div>--->
     <div id="page7" class="swiper-slide">
         <div class="title">RODO Clinical Advisory Board</div>
         <div class="fluid-container f-container centered">
                 <img src="PastedGraphic-1.png"> 
-                <p id="michael" class="left-align"><span class="name">Dr. Michael Pikos</span><br> <span class="position">CEO of the Pikos Institute</span><br> 
+                <p id="michael" class="left"><span class="name">Dr. Michael Pikos</span><br> <span class="position">CEO of the Pikos Institute</span><br> 
                         Dr. Pikos is originally from Campbell, Ohio. <br>
                         He attended The Ohio State University where he graduated Summa Cum Laude and Phi Beta Kappa. 
                         He also graduated with honors from The Ohio State University College of Dentistry. <br><br>
@@ -311,7 +211,7 @@
                 <svg width="5" height="300">
                     <rect width="1" height="300" style="fill:rgb(125, 230, 255)"/>
                 </svg>
-                <p id="ben" class="right-align"><span class="name">Dr. Benjamin Wu</span><br> <span class="position">Director for UCLA Weintraub Center for <br>Reconstructive Biotechnology</span><br>
+                <p id="ben" class="right"><span class="name">Dr. Benjamin Wu</span><br> <span class="position">Director for UCLA Weintraub Center for <br>Reconstructive Biotechnology</span><br>
                     Dr. Ben Wu is 
                     Professor and Chair of the Division of Advanced Prosthodontics, and the Director of the Weintraub Center 
                     for Reconstructive Biotechnology and the Executive Director of the Innovative Digital Dentistry Systems (iDDS) 
@@ -320,83 +220,25 @@
                 <img src="PastedGraphic-2.png"> 
         </div>
         <div class="inline">
-            <div class="left-align">Co-Chair</div>
-            <div class="right-align">Co-Chair</div>
+            <div class="left">Co-Chairman</div>
+            <div class="right">Co-Chairman</div>
         </div>
-        
-        <div class="swiper s-carousel">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide cad">
-                   <a href="https://www.linkedin.com/in/ole-jensen-6b871512a" target="_blank"><img src="PastedGraphic-3.png"></a><span class="names">&nbsp;<br>Dr. Ole Jansen</span> <br> <span class="positions">Former Co-Chair</span>
-                </div>
-                <div class="swiper-slide cad">
-                   <a href="https://weintraubcenter.dentistry.ucla.edu/faculty" target="_blank"><img src="PastedGraphic-4.png"></a><span class="names">&nbsp;<br>Dr. John Beumer<br></span><span class="positions">  UCLA</span>
-                </div>
-                <div class="swiper-slide cad">
-                   <a href="https://www.clearchoice.com/doctors/hans-peter-weber/" target="_blank"><img src="PastedGraphic-5.png"></a><span class="names">&nbsp;<br>Dr. Hans-Peter Weber</span><br> <span class="positions">ClearChoice </span>
-                </div>
-                <div class="swiper-slide cad">
-                   <a href="https://dentistry.ucla.edu/profile/shah-kumar-c" target="_blank"><img src="PastedGraphic-6.png"></a><span class="names">&nbsp;<br>Dr. Kumar Shah </span><br> <span class="positions">UCLA</span>
-                </div>
-                <div class="swiper-slide cad">
-                    <a href="https://www.cejdentistry.com/" target="_blank"><img src="PastedGraphic-7.png"></a><span class="names">&nbsp;<br>Dr. Curtis Jansen </span><br> <span class="positions">UCLA</span>
-                 </div>
-                <div class="swiper-slide cad">
-                   <a href="https://zagacenters.com/prof-dr-james-chow/" target="_blank"><img src="James Chow.jpg"></a><span class="names">&nbsp;<br>Dr. James Chow</span>
-                </div>
-                <div class="swiper-slide cad">
-                   <a href="https://www.aboc.com.hk/restorative-team" target="_blank"><img src="Adam Siu.jpg"></a><span class="names">&nbsp;<br>Dr. Adam Siu</span>
-                </div>
-                <div class="swiper-slide cad">
-                   <a href="https://www.sanjosedentist.com/about/meet-the-doctors" target="_blank"><img src="Steve Lim.jpg"></a><span class="names">&nbsp;<br>Dr. Steve Lim</span>
-                </div>
-                <div class="swiper-slide cad">
-                   <a href="https://millvalleydentist.com/doctors/" target="_blank"><img src="Leo Yang.jpg"></a><span class="names">&nbsp;<br>Dr. Leo Yang</span>
-                </div>
-                <div class="swiper-slide cad">
-                   <a href="https://www.clearchoice.com/doctors/daniel-f-galindo/" target="_blank"><img src="Daniel Galindo.jpg"></a><span class="names">&nbsp;<br>Dr. Daniel Galindo</span>
-                </div>
-                <div class="swiper-slide cad">
-                   <a href="https://www.omnismile.com/copy-of-home" target="_blank"><img src="Andrew Johnson.jpg"></a><span class="names">&nbsp;<br>Dr. Andrew Johnson</span>
-                </div>
-                <div class="swiper-slide cad">
-                   <a href="http://www.dentalzero.com/news/articleView.html?idxno=4238&sitemode=" target="_blank"><img src="Jeong-Ho John Kim.jpg"></a><span class="names">&nbsp;<br>Dr. Jeong-Ho John Kim</span>
-                </div>
-                <div class="swiper-slide cad">
-                   <a href="https://www.professionalsindentistry.com/meet-us.html" target="_blank"><img src="David Little.jpg"></a><span class="names">&nbsp;<br>Dr. David Little</span>
-                </div>
-                <div class="swiper-slide cad">
-                   <a href="https://www.assiniboinedentalgroup.com/site/dentists-st-james-winnipeg/dr-amarjit-rihal" target="_blank"><img src="Amarjit Rihal.jpg"></a><span class="names">&nbsp;<br>Dr. Armajit Rihal</span>
-                </div>
-                <div class="swiper-slide cad">
-                   <a href="https://www.ucsfhealth.org/providers/dr-arun-sharma" target="_blank"><img src="Arun Sharma.jpg"></a><span class="names">&nbsp;<br>Dr. Arun Sharma</span>
-                </div>
-                <div class="swiper-slide cad">
-                   <a href="https://www.mayo.edu/research/centers-programs/center-regenerative-medicine/about/faculty-staff?letter=e" target="_blank"><img src="Steve Eckert.jpg"></a><span class="names">&nbsp;<br>Dr. Curtis Jansen</span>
-                </div>
-                <div class="swiper-slide cad">
-                   <a href="https://gidedental.com/faculty-steven-parel" target="_blank"><img src="Steve Parel.jpg"></a><span class="names">&nbsp;<br>Dr. Steve Parel</span>
-                </div>
-                <div class="swiper-slide cad">
-                   <a href="https://ballantynedentistry.com/dr-christian-yaste/" target="_blank"><img src="Christian Yaste.jpg"></a><span class="names">&nbsp;<br>Dr. Christian Yaste</span>
-                </div>
-                <div class="swiper-slide cad">
-                   <a href="https://actondentistry.com/dr-matthew-slaven/" target="_blank"><img src="Matthew Slaven.jpg"></a><span class="names">&nbsp;<br>Dr. Matthew Slaven</span>
-                </div>
-                <div class="swiper-slide cad">
-                   <a href="https://www.idspringfield.com/about/cosmetic-dentist-olson/" target="_blank"><img src="Grant Olson.jpg"></a><span class="names">&nbsp;<br>Dr. Grant Olson</span>
-                </div>
-            </div>
-            <div class="swiper-button-next"><i id="rightarrow" class="fas fa-chevron-right"></i></div>
-            <div class="swiper-button-prev"><i id="leftarrow" class="fas fa-chevron-left"></i></div>
-          </div>
-        
+        <div class="horizontal-slide row">
+            <div class="column arrows"><a><i id="leftarrow" class="fas fa-chevron-left"></i></a></div>
+            <div class="column"><img src="PastedGraphic-3.png"><span class="names">&nbsp;<br>Dr. Ole Jansen</span> <br> <span class="positions">Former Co-Chair</span></div>
+            <div class="column"><img src="PastedGraphic-4.png"><span class="names">&nbsp;<br>Dr. John Beumer<br></span><span class="positions">  UCLA</span></div>
+            <div class="column"><img src="PastedGraphic-5.png"><span class="names">&nbsp;<br>Dr. Hans-Peter Weber</span><br> <span class="positions">ClearChoice </span></div>
+            <div class="column"><img src="PastedGraphic-6.png"><span class="names">&nbsp;<br>Dr. Kumar Shah </span><br> <span class="positions">UCLA</span></div>
+            <div class="column"><img src="PastedGraphic-7.png"><span class="names">&nbsp;<br>Dr. Curtis Jansen</span></div>
+            <div class="column arrows"><a><i id="rightarrow" class="fas fa-chevron-right"></i></a></div>
+        </div>
+
     </div>
     <div class="swiper-slide" id="page8">
         <h1> What experts say<br> </h1>
         <div class="row">
             <div class="vidPic col-xs-4">
-                <a href="#curtis" class="button more" id="cj-vid"> <img class="pop-thumbnail" src="PastedGraphic-8.png"> </a>
+                <a href="#curtis" class="button more" id="cj-vid"> <img src="PastedGraphic-8.png"> </a>
                 <p><span>Dr. Curtis Jansen</span><br>Smileloc Procedural Video</p>
                 <div id="curtis" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
 
@@ -408,7 +250,7 @@
                 </div>
             </div>  
             <div class="vidPic col-xs-4">  
-                <a href="#leoyang" class="button more" id="ly-vid" onclick="loadVid();"><img class="pop-thumbnail" src="PastedGraphic-9.png"></a>
+                <a href="#leoyang" class="button more" id="ly-vid" onclick="loadVid();"><img src="PastedGraphic-9.png"></a>
                 <p><span>Dr. Leo Yang</span><br>Smileloc Delivery and Removal Video</p>
                 <div id="leoyang" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
                     <video playsinline controls id="ly-inter" class="pop-vid" src="RODO - Dr. Leo Yang - Interview Compressed.mp4" >
@@ -416,7 +258,7 @@
                 </div>
             </div>
             <div class="vidPic col-xs-4">
-                <a href="#stevelim" class="button more" id="sl-vid" onclick="loadVid();"><img class="pop-thumbnail" src="PastedGraphic-10.png"></a>
+                <a href="#stevelim" class="button more" id="sl-vid" onclick="loadVid();"><img src="PastedGraphic-10.png"></a>
                 <p><span>Dr. Steve Lim</span><br>Center for Advanced Dentistry Video</p>
                 <div id="stevelim" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
                     <video playsinline controls id="sl-inter" class="pop-vid" src="Center For Advanced Dentistry Steve Lim.mp4" >
@@ -426,7 +268,7 @@
         </div>
         <div class="row">
             <div class="vidPic col-xs-4">
-                <a href="#kowalski" class="button more" id="bjk-vid"><img class="pop-thumbnail" src="PastedGraphic-11.png"></a>
+                <a href="#kowalski" class="button more" id="bjk-vid"><img src="PastedGraphic-11.png"></a>
                 <p><span>BJ Kowalski, President of ROE Dental Laboratory</span><br>We're changing the HOLE Dentistry: Smileloc</p>
                 <div id="kowalski" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
                     
@@ -437,7 +279,7 @@
                 </div>
             </div>
             <div class="vidPic col-xs-4">
-                <a href="#youngseo" class="button more" id="ys-vid"><img class="pop-thumbnail" src="PastedGraphic-12.png"></a>
+                <a href="#youngseo" class="button more" id="ys-vid"><img src="PastedGraphic-12.png"></a>
                 <p><span>Young Seo, CEO of RODO Medical</span><br>ROE Reviews - Smileloc by RODO</p>
                 <div id="youngseo" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
                     
@@ -448,7 +290,7 @@
                 </div>
             </div>
             <div class="vidPic col-xs-4">
-                <a href="#grantolsen" class="button more" id="go-vid"><img class="pop-thumbnail" src="PastedGraphic-13.png"></a>
+                <a href="#grantolsen" class="button more" id="go-vid"><img src="PastedGraphic-13.png"></a>
                 <p><span>Dr. Grant Olsen</span><br>Changing the HOLE Industry with Smileloc</p>
                 <div id="grantolsen" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
                     
@@ -796,7 +638,7 @@
 
         <button class="contact btn btn-sm">Contact Us</button>
         <div class="located">
-            <img class="logo" src="http://rodomedical.com/compiled/images/rodomedical-logo.png">
+            <img class="logo" src="rodomedical-logo-sm.png">
             &nbsp;
             RODO Medical, Inc. 2635 N. First St. Suite 218, San Jose, CA 95134
         </div>
@@ -809,9 +651,6 @@
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script type="text/javascript">
-    playfirst = function() {
-        document.getElementById();
-    };
 
     /*Initiates Magnific Popup*/
     $('#video-link').magnificPopup({
@@ -872,7 +711,6 @@
     });
 
     </script>
-    <script src="swiperCus.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="https://getbootstrap.com/docs/3.3/dist/js/bootstrap.min.js"></script>
@@ -880,7 +718,7 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="https://getbootstrap.com/docs/3.3/assets/js/ie10-viewport-bug-workaround.js"></script>
      <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
-
+     <script src="swiperCus.js"></script>
 </body>
 
 <footer>
