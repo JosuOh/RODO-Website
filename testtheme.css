@@ -24,7 +24,8 @@
 
 
 
-* {
+
+body {
     text-align: center;
     font-family: 'AvenirBold', 'Avenir LT Std', sans-serif;
 }
@@ -35,9 +36,6 @@ header {
     color: black;
 } 
 
-body {
-    font-family: 'AvenirBold';
-}
 
 footer {
     background-color: black;
@@ -55,25 +53,25 @@ body::-webkit-scrollbar {
     height: 100%}
 
 /*Swiper Module*/
-.swiper {
+.swiper-main {
     position: absolute;
     bottom: 0px;
     width: 100%;
     overflow: hidden;
     height: 90vh;} 
     @media (max-width:1536px) {
-        .swiper {
+        .swiper-main {
             bottom: 0px;
             height: 90vh;
             width: 1536px;
         }}
     @media (max-width:1080px) {
-        .swiper {
+        .swiper-main {
             height: 90vh;
             width: 1080px;
         }}
     @media (max-width:720px) {
-        .swiper {
+        .swiper-main {
             height: 90vh;
             width: 720px;
         }}
@@ -101,7 +99,6 @@ body::-webkit-scrollbar {
 .swiper-slide {
     background-color: #1C2A4A;
     color: white;
-    transform: translateZ(0);
 }
 .swiper-slide .text{
     position: absolute;
@@ -143,6 +140,16 @@ body::-webkit-scrollbar {
     margin: var(--swiper-pagination-bullet-vertical-gap,20px) 0;
 }
 
+/* Safari Flickering Bug Fix*/
+.swiper-slide {
+    -webkit-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    backface-visibility: unset;
+    -webkit-backface-visibility: hidden;
+    transform: translateZ(0);
+}
 
 
 /* Custom CSS for Background Videos*/
@@ -152,9 +159,10 @@ body::-webkit-scrollbar {
     z-index: -1;
     width: 143%;
 }
-#bgvideo2 {
+#bgvideo2 {/* 
     right:300px;
-    bottom: 580px;
+    bottom: 580px; */
+    transform: translate();
     width: 100%;
     z-index: -1;
 }
@@ -246,7 +254,11 @@ body::-webkit-scrollbar {
 #page4 #million {
     font-size: 220px;
     font-weight: bold;
-    color: #7EE6FF;}
+    transition: all 100ms ease-in-out;
+    color: #4AB3E2;}
+    #page4 #million:hover {
+        color:#7EE6FF;
+        letter-spacing: 5px;}
 #page4 p {
     text-align: left;
     margin-left: 10%;
@@ -275,8 +287,7 @@ body::-webkit-scrollbar {
             text-align: left;}
         #page4 #million {
             font-size: 200px;
-            font-weight: bold;
-            color: #7EE6FF;}
+            font-weight: bold;}
         #page4 p {
             text-align: left;
             margin-left: 10%;
@@ -284,33 +295,38 @@ body::-webkit-scrollbar {
             font-weight: bold;
         }
     }
+    .quote .quote-text {
+        opacity: 1;
+    }
     .quote .quotee {
         font-weight: normal;
     }
+
+
 
 .centered {
     margin: auto;
 }
 
-#placeholder {
-    margin-top: 25px;
-    width: 800px;
+.clip {
+    position: absolute;
+    color: gray;
 }
 
 #page5 .title {
     margin-top: 25px;
-    height: 90px;
+    height: 60px;
     font-weight: bold;
     width: 65%;
-    font-size: 48px;}
+    font-size: 30px;}
 
 #page5 span.subtitle {
     font-weight: bold;
     font-size: 20px;}
-#page5 div.left {
+#page5 div.left-align {
     margin-left: 10px;
     text-align: left;}
-#page5 div.right {
+#page5 div.right-align {
     margin-right: 10px;
     text-align: right;}
 #page5 p {
@@ -329,40 +345,83 @@ body::-webkit-scrollbar {
             }
         }
     }
-#page5 .title .col-xs-4 {
+#page5 .title.words .col-xs-4 {
+    margin-top: 0px;
     transition: all 0.25s ease-in-out;}
     #page5 .title .col-xs-4:hover { 
-        font-size: 52px;
+        font-size: 40px;
+    }
+.gif {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    display: none;}
+    .popup:hover .gif {
+        display: inline;
     }
 
+
 #page6 {
-   background-color: #161B26;
-}
-#page6 .white{
-    background-color: white;    
-}
+   background-color: white;
+   color: black;
+   font-family: "AvenirBolder";
+   font-weight: bold;
+   line-height: 1em;
+   font-size: 18px;}
+
 #page6 .stacked {
-    margin-top: auto;
+    position: relative;
+    height: 200px;
+    margin-top: 30px;}
+    .stacked .abutment {
+        position: absolute;
+        bottom: 0;
+        right: 27px;
+    }
+#page6 .svg-over {
+    position: absolute;
+    left: 44%;
+    margin-top: 40px;
+}
+#page6 .top-text {
+    font-size: 22px;
+    line-height: 40px;
 }
 
 #page6 .row{
-    text-align: center;
-    margin: 6% auto;
-    max-width: 1050px;
-}
+    margin: 5% auto;
+    max-width: 1300px;
+    max-height: 800px;}
+    #page6 .row.nested-row {
+        margin: auto;
+        vertical-align: middle}
+    #page6 .row .subtext {
+        font-size: 12px;
+        font-family: "AvenirMedium";}
+        #page6 .right-align {
+            text-align: right; }
+        #page6 .left-align {
+            text-align: left; }
+        #page6 .centered {
+            text-align: center;}
 #page6 h3 {
     font-size: 15px;
     text-align: left;
-    max-width: 400px;
-    margin: 10px auto 50px;
-}
+    max-width: 455px;
+    margin: 10px auto 6%;}
 #page6 .subtitle {
     max-width: 400px; 
-    margin: 0 auto auto auto;
-}
+    font-size: 15px;
+    margin: 40px auto auto auto;}
+    @media(max-height: 736px) {
+        #page6 .subtitle {
+            max-width: 400px; 
+            margin: 0 auto auto auto;}}
 #page6 #fd-vid {
-    margin: auto auto auto 45px;
-}
+    margin: auto auto auto 45px;}
+    #page6 #fd-vid img {
+        margin-top: 10%;
+    }
 #page6 #lump{
     margin: auto 15px auto auto;
     max-width: 395px;
@@ -379,10 +438,10 @@ body::-webkit-scrollbar {
     margin: 30px auto auto auto;
     width: 1250px;
     display: flex;}
-    #page7 .left {
+    #page7 .left-align {
         text-align: left;
     }
-    #page7 .right {
+    #page7 .right-align {
         text-align: right;
     }
     #page7 .name {
@@ -404,11 +463,11 @@ body::-webkit-scrollbar {
 #page7 img {
     height: 350px;
 }
-#page7 div.left {
+#page7 div.left-align {
     display: inline-block;
     font-weight: bold;
     }
-#page7 div.right {
+#page7 div.right-align {
     display: inline-block;
     font-weight: bold;
     margin-left: 1075px;
@@ -432,12 +491,12 @@ body::-webkit-scrollbar {
             width: 780px;
         }
     }
-    #page7 .horizontal-slide img {
+    #page7 .carousel-slide img {
     width: 150px;
     margin: 0 45px;
     height: auto;}
     @media(max-height:736px) {
-        #page7 .horizontal-slide img {
+        #page7 .carousel-slide img {
         margin: 0 25px;
         width: 100px;}}
 .column {
@@ -451,18 +510,27 @@ body::-webkit-scrollbar {
 .arrows {
     width: 20px;
 }
-.column .fas {
-    color: white;
-    padding-top: 70px;
-    margin: 0 5px;
-    font-size: 30px;}
+#page7 .swiper {
+    margin-top: 30px;
+    width: 85%;
+    max-height: 200px;}
+    #page7 .swiper .cad img{
+        max-height: 165px;}
     @media(max-height:736px) {
-        .column .fas {
-            padding-top: 40px;}}
+        #page7 .swiper {
+            width: 60%;
+            max-height: 200px;}
+            #page7 .swiper .cad img{
+                max-height: 120px;}}
+    .swiper-button-next::after, .swiper-button-prev::after {
+    content: "";
+}
 .names {
     font-weight: bold;}
 .positions {font-size: 10px;
 }
+
+
 
 
 #page8 {
@@ -632,8 +700,12 @@ body::-webkit-scrollbar {
     background-color: #18233B;
     z-index: 999999;
 }
+.pop-thumbnail:hover {
+    opacity: 0.75;
+}
+
 .mfp-content {
-    width: 80%;
+    width: 500px;
 }
 
 .mfp-hide {
