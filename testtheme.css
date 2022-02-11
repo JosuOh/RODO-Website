@@ -375,12 +375,8 @@ body::-webkit-scrollbar {
     position: absolute;
     color: gray;}
 
-
-
-
-
 #page5 {
-    background-color: #080808;
+    background-color: #051B27;
 }
 #page5 .title {
     position: absolute;
@@ -431,6 +427,9 @@ body::-webkit-scrollbar {
     left: 12.4vw;}
 #page5 #right-box {
     left: 52.55vw;}
+svg g text {
+    font-family: 'AvenirBold';
+}
 /* 
 
     @media(max-height: 726px) {
