@@ -420,6 +420,7 @@ body::-webkit-scrollbar {
     width: 35.05vw;
     height: 32.78vh;}
     #page5 .column img {
+	object-fit: cover;
         width: 35.05vw;
         height: 32.78vh;
     }
