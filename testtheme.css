@@ -181,7 +181,7 @@ body::-webkit-scrollbar {
     font-weight: normal;
     letter-spacing: 0px;
     z-index: 2;}
-    #page1 .play-btn:focus-within {
+    play-btn:focus {
         color: white;
     }
     @media(max-height:800px) { .swiper-slide .text{
