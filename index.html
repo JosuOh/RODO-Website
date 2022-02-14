@@ -9,6 +9,7 @@
 <head>
     <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Smileloc</title>
     
     <!---SwiperJS CSS-->
@@ -63,6 +64,7 @@
         <div class="container-fluid" style="height: 80px;">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
+            
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
@@ -77,14 +79,16 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      
             <ul class="nav navbar-nav mr-auto navbar-right">
               <li><a href="#" class="linkTech">THE Technology</a></li>
-              <li><a href="#">THE Team</a></li>
-              <li><a href="Resource.html">Resources & News</a></li>
+              <li><a href="TheTeam.html">THE Team</a></li>
+              <li><a href="Resource.html">Resources</a></li>
+              <li><a href="#">News</a></li>
               <li><a href="#"><img src="Icon awesome-instagram.svg"></a></li>
               <li><a href="#"><img src="Icon awesome-facebook-square.svg"></a></li>
               <li><a href="#"><img src="Icon simple-tiktok.svg"></a></li>
-              <li><button onclick="location.href='mailto:info@rodomedical.com'" type="button" class="contact btn btn-sm">Contact Us</button></li>
+              <li id="no-collapse"><button onclick="location.href='mailto:info@rodomedical.com'" type="button" class="contact btn btn-sm">Contact Us</button></li>
             </ul>
           </div><!-- /.navbar-collapse -->
+          <button onclick="location.href='mailto:info@rodomedical.com'" type="button" id="nc" class="contact btn btn-sm">Contact Us</button>
         </div><!-- /.container-fluid -->
       </nav> 
 <!-- Slider main container -->
@@ -96,10 +100,11 @@
         <div class="text">
             If this isn't<br> revolutionary,<br> <span class="stretch">what is?</span>
         </div>
-        <video playsinline muted loop id="bgvideo">
+        <div class="video-wrapper vb-wrap">
+        <video playsinline muted loop id="bgvideo" class="fs-vid">
             <source src="Smileloc_in_Action_Page1.mp4" type="video/mp4">
         </video>
-        
+        </div>
         <a href="#c-video" id="video-link" class="play-btn more" onclick="loadVid();"><img id="play-icon" src="play button.svg"><span class="play-text">Play full video</span><img src="arrow icon.svg"></a>
         <div id="c-video" class="container-fluid mfp-with-zoom mfp-hide" style="max-width: 75%; margin: 0 auto;">
                 <video playsinline controls id="promo-video" class="pop-vid" src="RODO - 30 Second Promo - RODO Only2.mp4" >
@@ -107,8 +112,8 @@
         </div>  
     </div>
     <div class="swiper-slide" id="page2">
-        <div class="video-wrapper">
-            <video playsinline  muted loop id="bgvideo2">
+        <div class="video-wrapper vb-wrap">
+            <video playsinline  muted loop id="bgvideo2" class="fs-vid">
                 <source src="Full Arch Compressed.mp4" type="video/mp4">
             </video>
             <div class="title">
@@ -116,19 +121,20 @@
                 <span class="subtitle">No Screws. No Cement.</span>
             </div>
             <a href="#" class="linkTech">
-                Check out the technology 
+                <div><span>Check out the technology</span> </div>
+                <div class="under">
+                    <img src="LinkLine.svg"/>
+                </div>
+            </div>
             </a>
-            <div class="under">
-                <img src="LinkLine.svg"/>
-            </div>
-            <div class="credit-video">
-                *Courtesy of DIMFC
-            </div>
+            
+        <div class="credit-video">
+            *Courtesy of DIMFC
         </div>
     </div>
     <div class="swiper-slide" id="page3">
         <div class="video-wrapper">
-            <video playsinline muted loop id="bgvideo3">
+            <video playsinline muted loop id="bgvideo3" class="fs-vid">
                 <source src="Maggie Removal page3 Compressed.mp4" type="video/mp4">
             </video>
             <div>
@@ -140,7 +146,7 @@
             </div>
         </div>
         <div class="credit-video">
-            *Courtesy of Dr. Curtis Jansen
+            *Courtesy of CEJ Dentistry
         </div>
     </div>
     <div id="page4" class="swiper-slide">
@@ -149,8 +155,8 @@
         <div id="million"> 40,000,000</div>
             <p>edentulous individuals in North America who could benefit from <br> Smileloc that provides an <span class="org-text">affordable</span>, 
             <span class="org-text">durable</span>, <span class="org-text">long term solution</span>.</p>
-        <div class="quote"><span class="quote-text">“The Smileloc solutions enable us to present affordable treatment options to patient without 
-                        compromising clinical outcome.”</span> <br><span class="quotee">Dr. Michael Pikos, Pikos Institute</span></div>
+        <div class="quote"><span class="quote-text">&ldquo;The Smileloc solutions enable us to present affordable treatment options to patient without 
+                        compromising clinical outcome.&rdquo;</span> <br><span class="quotee">Dr. Michael Pikos, Pikos Institute</span></div>
         
     </div>
     <div class="swiper-slide" id="page5">
@@ -266,6 +272,7 @@
         </div>
         <div class="img-wrap" id="img-pikos">
             <img src="PastedGraphic-1.png"> 
+            <div class="caption pikos">Co-Chair</div>
         </div>
         <p id="michael" class="bio"><span class="name">Dr. Michael Pikos</span><br> <span class="position">CEO of the Pikos Institute</span><br> 
                 Dr. Pikos is originally from Campbell, Ohio. <br>
@@ -283,10 +290,8 @@
                 <a id="link-wu" href="https://weintraubcenter.dentistry.ucla.edu/benjamin-wu" target="_blank"><i id="arrow" class="fas fa-chevron-left"></i> &nbsp;  Read More</a></p>
         <div class="img-wrap" id="img-wu">
             <img src="PastedGraphic-2.png"> 
+            <div class="caption wu">Co-Chair</div>
         </div>
-    
-        <div class="caption pikos">Co-Chair</div>
-        <div class="caption wu">Co-Chair</div>
 
         <!---Horizontal Carousel for CAB-->
         <div class="swiper s-carousel">
@@ -359,7 +364,7 @@
         
     </div>
     <div class="swiper-slide" id="page8">
-        <h1> What experts say <span class="bar"> | </span></h1>
+        <h1> What experts say <span class="bar"> | </span> <span class="sub">Our Smileloc system benefits oral surgery, temporarty and final restorations, and labatory procedures.</span></h1>
 
             <div class="vidPic a">
                 <a href="#curtis" class="button more" id="cj-vid"> <img class="pop-thumbnail" src="PastedGraphic-8.png"><i class="fas fa-play gif" aria-hidden="true"></i> </a>
@@ -425,8 +430,8 @@
             </div>
  
             <div class="quote">
-                <span class="span-text">“Rodo Medical Inc has the potential to change Implant Dentistry like how 
-                    Apple Inc changed the smartphone industry.”</span> <br><span class="quotee">Dr. Kumar Shah, UCLA</span>
+                <span class="span-text">&ldquo;This innovative, cement-free retention system brings a 
+                    totally new dimension to implant dentistry &rdquo;</span> <br><span class="quotee"> Dr. Hans-Peter Weber</span>
             </div>
     </div>
     <div class="swiper-slide" id="page9">
