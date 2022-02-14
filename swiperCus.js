@@ -37,12 +37,13 @@ function playVid3() {
    bg3.play();
 }
   function loadVid() {
-    document.querySelector(".pop-vid").load();
+    document.querySelectorAll(".pop-vid").load();
 }
 
 window.addEventListener("load", function(){
   bg.play();
   document.querySelector(".swiper-main").style.cursor = "default";
+  document.querySelector("nav").style.pointerEvents = "auto";
 });
 
 
@@ -60,7 +61,7 @@ var distance = elem.getBoundingClientRect();
 return (
   distance.top >= 0 &&
   distance.left >= 0 &&
-  distance.bottom <= (window.innerHeight + 330 || document.documentElement.clientHeight + 330) 
+  distance.bottom <= (window.innerHeight + 830 || document.documentElement.clientHeight + 830) 
   //distance.right <= (window.innerWidth || document.documentElement.clientWidth)
 );
 };
@@ -98,10 +99,13 @@ var mfp_container;
 
 document.addEventListener('click', function() {
     mfp_container = document.querySelector(".pop-vid"); 
-
+    mfp_all = document.querySelectorAll(".pop-vid");
   document.addEventListener('click', function(event) {
     var isClickInsideElement = mfp_container.contains(event.target);
     if (!isClickInsideElement) {
+      for(i = 0; i < mfp_all.length; i++) {
+        mfp_all[i].load();
+      }
       mfp_container.pause();
       console.log("Outside");
     } else {
@@ -175,7 +179,7 @@ const swiper = new Swiper('.swiper-main', {
     direction: 'vertical',
     loop: false,
      
-    speed: 1300,
+    speed: 1000,
     shortSwipes: false,
 
     forceToAxis: true,
@@ -216,12 +220,10 @@ const swiper = new Swiper('.swiper-main', {
 
       480: {
         noSwiping: false,
-        grabCursor: true
       },
   
       992: {
-        noSwiping: false,
-        grabCursor: true
+        noSwiping: true,
       },
   
       1024: {
@@ -263,3 +265,25 @@ $('#nav-logo').click(swiper,function(){
 $('.linkTech').click(swiper, function() {
     swiper.slideTo(5);
 })
+
+
+function keepCentered() {
+  var w = document.querySelector("#bgvideo2").clientWidth;
+  var windowWidth = window.innerWidth;
+    if (w > windowWidth) {
+      obj.style.transform = "translate(calc((100vw - 100%)/2), calc((100vh - 100%)/2))";
+    } else {
+      obj.style.transform = "";
+    }
+}
+window.addEventListener('resize', keepCentered);
+
+/* 
+function fontScale() {
+  var obj = document.querySelector(".page3");
+  var height = obj.clientHeight;
+  obj.style.fontSize = height;
+}
+
+window.addEventListener('resize', fontScale()); */
+ 
