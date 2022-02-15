@@ -196,7 +196,7 @@ svg g text {
             .fs-vid {
                 height: 864px;
                 min-width: auto;
-                height: auto;}
+                width: auto;}
         }
     }
     @media (max-width:1366px) {
