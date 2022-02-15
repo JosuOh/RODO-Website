@@ -62,7 +62,8 @@ button.navbar-toggle {
 
 
 body::-webkit-scrollbar {
-    display: none; 
+    /* display: none; */ 
+    right: 25%;
     height: 100%}
 svg g text {
     font-family: 'AvenirBold';
@@ -101,9 +102,28 @@ svg g text {
     width: 1920px;
     height: 1000px;
     left: 0;
-    overflow: hidden;
     /* cursor: wait; */} 
      @media (max-width:1680px)  {
+        @media (max-height: 1050px) {
+            .swiper-main {
+                top: 80px;
+                width: 1680px;
+                height: 970px;}
+            .fs-vid {
+                height: 1050px;
+                width: auto;
+                min-width: auto;}
+        } 
+        @media (max-height: 971px) {
+            .swiper-main {
+                top: 80px;
+                width: 1680px;
+                height: 891px;}
+            .fs-vid {
+                height: 971px;
+                width: auto;
+                min-width: auto;}
+        }
         @media(max-height:876px) {
         .swiper-main {
             top: 80px;
@@ -126,6 +146,15 @@ svg g text {
             min-width: auto;}
         }} 
      @media (max-width:1536px) {
+        @media(max-height: 960px) {
+            .swiper-main {
+                top: 80px;
+                width: 1536px;
+                height: 880px;}
+            .fs-vid {
+                height: 960;
+                width: auto;}
+        }
         @media(max-height:864px) {
         .swiper-main {
             top: 80px;
@@ -136,6 +165,18 @@ svg g text {
             min-width: 100%;
             height: auto;}
         }}
+    @media (max-width: 1440px) {
+        @media (max-height: 900px) {
+            .swiper-main {
+                top: 80px;
+                width: 1440px;
+                height: 820px;}
+            .fs-vid {
+                height: 900px;
+                min-width: auto;
+                height: auto;}
+        }
+    }
     @media (max-width:1366px) {
         @media(max-height:768px) {
         .swiper-main {
@@ -221,6 +262,11 @@ svg g text {
 .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: var(--swiper-pagination-bullet-vertical-gap,20px) 0;
 }
+
+/* .scroll {
+    overflow-y: scroll;
+    overflow-x: hidden;
+} */
 
 /* Safari Flickering Bug Fix*/
 .swiper-slide {
@@ -531,8 +577,7 @@ svg g text {
 .number {
     transition: all 0.25s ease-in-out;}
     .number:hover {
-        cursor: default;
-        font-size: 32px;}
+        cursor: default;}
 #page5 .gif {
     left: 17%;
 }
@@ -1146,7 +1191,7 @@ button.mfp-close {
 }
 
 .scroll-stop {
-overflow: hidden;
+overflow-y: hidden;
 }
 
 
