@@ -9,26 +9,26 @@
 
 @font-face {
     font-family: 'AvenirBold';
-    src: url('Avenir LT Std 85 Heavy.otf');
+    src: url('fonts/Avenir LT Std 85 Heavy/Avenir LT Std 85 Heavy.otf');
 }
 
 @font-face {
     font-family: 'AvenirBolder';
-    src: url('Avenir LT Std 95 Black.otf');
+    src: url('fonts/Avenir LT Std 95 Black/Avenir LT Std 95 Black.otf');
 }
 
 @font-face {
     font-family: 'AvenirMedium';
-    src: url('Avenir LT Std 65 Medium.otf');
+    src: url('fonts/Avenir LT Std 65 Medium/Avenir LT Std 65 Medium.otf');
 }
 
 @font-face {
     font-family: 'AvenirRoman';
-    src: url('Avenir LT Std 55 Roman.otf');
+    src: url('fonts/Avenir LT Std 55 Roman/Avenir LT Std 55 Roman.otf');
 }
 @font-face {
     font-family: 'AvenirBook';
-    src: url('Avenir LT Std 45 Book.otf');
+    src: url('fonts/Avenir LT Std 45 Book/Avenir LT Std 45 Book.otf');
 }
 
 
@@ -103,17 +103,6 @@ svg g text {
     height: 1000px;
     left: 0;
     /* cursor: wait; */} 
-     @media (max-width:1920px)  {
-        @media(max-height:973px) {
-        .swiper-main {
-            top: 80px;
-            width: 1627px;
-            height: 893px;}
-        .fs-vid {
-            height: auto;
-            width: 100%;
-            min-width: 100%;}
-        }} 
      @media (max-width:1680px)  {
         @media (max-height: 1050px) {
             .swiper-main {
@@ -141,9 +130,9 @@ svg g text {
             width: 1680px;
             height: 786px;}
         .fs-vid {
-            height: 950px;
-            width: auto;
-            min-width: auto;}
+            height: auto;
+            width: 100%;
+            min-width: 100%;}
         }}
     @media (max-width:1627px)  {
         @media(max-height:950px) {
@@ -185,17 +174,17 @@ svg g text {
             .fs-vid {
                 height: 900px;
                 min-width: auto;
-                width: auto;}
+                height: auto;}
         }
-	@media (max-height: 863px) {
+        @media (max-height: 864px) {
             .swiper-main {
                 top: 80px;
                 width: 1440px;
-                height: 783px;}
+                height: 784px;}
             .fs-vid {
-                height: 863px;
+                height: 864px;
                 min-width: auto;
-                width: auto;}
+                height: auto;}
         }
     }
     @media (max-width:1366px) {
@@ -203,8 +192,16 @@ svg g text {
         .swiper-main {
             top: 80px;
             width: 1366px;
-            height: 698px;
-    }}}/*
+            height: 688px;
+    }}}
+    @media (max-width:1280px) {
+        @media(max-height:720px) {
+        .swiper-main {
+            top: 80px;
+            width: 1280px;
+            height: 640px;
+    }}}
+    /*
     @media (max-width:800px) {
         @media(max-height:600px) {
         .swiper-main {
