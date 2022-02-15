@@ -9,26 +9,26 @@
 
 @font-face {
     font-family: 'AvenirBold';
-    src: url('Avenir LT Std 85 Heavy.otf');
+    src: url('fonts/Avenir LT Std 85 Heavy/Avenir LT Std 85 Heavy.otf');
 }
 
 @font-face {
     font-family: 'AvenirBolder';
-    src: url('Avenir LT Std 95 Black.otf');
+    src: url('fonts/Avenir LT Std 95 Black/Avenir LT Std 95 Black.otf');
 }
 
 @font-face {
     font-family: 'AvenirMedium';
-    src: url('Avenir LT Std 65 Medium.otf');
+    src: url('fonts/Avenir LT Std 65 Medium/Avenir LT Std 65 Medium.otf');
 }
 
 @font-face {
     font-family: 'AvenirRoman';
-    src: url('Avenir LT Std 55 Roman.otf');
+    src: url('fonts/Avenir LT Std 55 Roman/Avenir LT Std 55 Roman.otf');
 }
 @font-face {
     font-family: 'AvenirBook';
-    src: url('Avenir LT Std 45 Book.otf');
+    src: url('fonts/Avenir LT Std 45 Book/Avenir LT Std 45 Book.otf');
 }
 
 
@@ -177,14 +177,14 @@ svg g text {
                 height: auto;}
         }
         @media (max-height: 864px) {
-	    .swiper-main {
+            .swiper-main {
                 top: 80px;
                 width: 1440px;
                 height: 784px;}
             .fs-vid {
                 height: 864px;
                 min-width: auto;
-                height: auto;}
+                width: auto;}
         }
     }
     @media (max-width:1366px) {
@@ -192,8 +192,16 @@ svg g text {
         .swiper-main {
             top: 80px;
             width: 1366px;
-            height: 698px;
-    }}}/*
+            height: 688px;
+    }}}
+    @media (max-width:1280px) {
+        @media(max-height:720px) {
+        .swiper-main {
+            top: 80px;
+            width: 1280px;
+            height: 640px;
+    }}}
+    /*
     @media (max-width:800px) {
         @media(max-height:600px) {
         .swiper-main {
