@@ -103,6 +103,17 @@ svg g text {
     height: 1000px;
     left: 0;
     /* cursor: wait; */} 
+     @media (max-width:1920px)  {
+        @media(max-height:973px) {
+        .swiper-main {
+            top: 80px;
+            width: 1627px;
+            height: 893px;}
+        .fs-vid {
+            height: 973px;
+            width: auto;
+            min-width: auto;}
+        }} 
      @media (max-width:1680px)  {
         @media (max-height: 1050px) {
             .swiper-main {
@@ -174,7 +185,17 @@ svg g text {
             .fs-vid {
                 height: 900px;
                 min-width: auto;
-                height: auto;}
+                width: auto;}
+        }
+	@media (max-height: 863px) {
+            .swiper-main {
+                top: 80px;
+                width: 1440px;
+                height: 783px;}
+            .fs-vid {
+                height: 863px;
+                min-width: auto;
+                width: auto;}
         }
     }
     @media (max-width:1366px) {
