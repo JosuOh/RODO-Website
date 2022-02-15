@@ -110,9 +110,9 @@ svg g text {
             width: 1627px;
             height: 893px;}
         .fs-vid {
-            height: 973px;
-            width: auto;
-            min-width: auto;}
+            height: auto;
+            width: 100%;
+            min-width: 100%;}
         }} 
      @media (max-width:1680px)  {
         @media (max-height: 1050px) {
