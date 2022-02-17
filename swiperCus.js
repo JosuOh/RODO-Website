@@ -286,4 +286,44 @@ function fontScale() {
 }
 
 window.addEventListener('resize', fontScale()); */
- 
+
+/* swiper.on('slideChangeTransitionEnd', function () {
+        var acs = document.querySelectorAll('.swiper-slide-active')[0];
+        var hasVerticalScrollbar = acs.scrollHeight > window.innerHeight;
+        console.log (acs.scrollHeight + " is greater than " + window.innerHeight + "?");
+        console.log(hasVerticalScrollbar);
+				
+        if (hasVerticalScrollbar) {
+            var scrollHeight = acs.scrollHeight;
+            var slideSize = window.innerHeight;
+            var scrollDifferenceTop = scrollHeight - slideSize;
+
+            acs.addEventListener('wheel', findScrollDirectionOtherBrowsers);
+
+            function findScrollDirectionOtherBrowsers(event) {
+                var scrollDifference = scrollHeight - slideSize - acs.scrollTop;
+
+								// Scroll wheel browser compatibility
+								var delta = event.wheelDelta || -1 * event.deltaY;
+                
+                // Enable scrolling if at edges
+                var spos = delta < 0 ? 0 : scrollDifferenceTop;
+               
+                if (!(scrollDifference == spos)) {
+                  console.log("DISABLING FULL SCROLL");
+                  console.log(scrollDifference + " and " + spos);
+                	swiper.mousewheel.disable();
+                }
+                else {
+                  console.log("ENABLING FULL SCROLL");
+                	swiper.mousewheel.enable();
+                }
+            }
+        }
+    });
+ */
+
+    //What I need for this to work:
+    //  Reference that viewbox is smaller than slide
+    //  Let viewbox move down until the edge, then redo scroll
+    //  
