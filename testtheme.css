@@ -1390,7 +1390,7 @@ overflow-y: hidden;
             font-family: 'Rotunda', sans-serif;
             font-weight: bold;}
         #page-2 .title .subtext {
-            font-size: 16px;
+            font-size: 18px;
             font-family: 'AvenirMedium', sans-serif;
             font-weight: normal;
         }
@@ -1412,6 +1412,9 @@ overflow-y: hidden;
             left:45%;
             top: 30%;
         }
+	#page-2 h3 {
+	    font-size: 18px;
+	}
 .col-lg-5 {
     width: 41.67%;
 }
