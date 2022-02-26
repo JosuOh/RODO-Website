@@ -2189,7 +2189,7 @@ margin-top: 200px;
     @media (max-width: 991px) {
         #press-releases .logo {
             text-align: center;
-            transform:translateY(0);
+            transform: translateY(0);
             height: 150px;}
             #press-releases .logo img {
                 width: 150px;}
