@@ -41,7 +41,7 @@ var el;
      bg.pause();
   }
   function playVid() {
-      bg.currentTime= 0;
+      bg.load();
       bg.play();
   }
   
@@ -49,7 +49,7 @@ var el;
     bg2.pause();
  }
  function playVid2() {
-     bg2.currentTime= 0;
+     bg2.load();
      bg2.play();
  }
 
@@ -57,7 +57,7 @@ var el;
   bg3.pause();
 }
 function playVid3() {
-   bg3.currentTime= 0;
+   bg3.load();
    bg3.play();
 }
   function loadVid() {
@@ -223,7 +223,7 @@ const swiper = new Swiper('.swiper-main', {
       },
   
       992: {
-        noSwiping: true,
+        noSwiping: false,
       },
   
       1024: {
@@ -262,7 +262,6 @@ const carousel = new Swiper('.s-carousel', {
 $('#nav-logo').click(swiper,function(){
     swiper.slideTo(0);
 })
-
 
 
 function keepCentered() {
