@@ -9,26 +9,26 @@
 
 @font-face {
     font-family: 'AvenirBold';
-    src: url('Avenir LT Std 85 Heavy.otf');
+    src: url('fonts/Avenir LT Std 85 Heavy/Avenir LT Std 85 Heavy.otf');
 }
 
 @font-face {
     font-family: 'AvenirBolder';
-    src: url('Avenir LT Std 95 Black.otf');
+    src: url('fonts/Avenir LT Std 95 Black/Avenir LT Std 95 Black.otf');
 }
 
 @font-face {
     font-family: 'AvenirMedium';
-    src: url('Avenir LT Std 65 Medium.otf');
+    src: url('fonts/Avenir LT Std 65 Medium/Avenir LT Std 65 Medium.otf');
 }
 
 @font-face {
     font-family: 'AvenirRoman';
-    src: url('Avenir LT Std 55 Roman.otf');
+    src: url('fonts/Avenir LT Std 55 Roman/Avenir LT Std 55 Roman.otf');
 }
 @font-face {
     font-family: 'AvenirBook';
-    src: url('Avenir LT Std 45 Book.otf');
+    src: url('fonts/Avenir LT Std 45 Book/Avenir LT Std 45 Book.otf');
 }
 
 
@@ -38,7 +38,7 @@ html {
 
 body {
     text-align: center;
-    font-family: 'AvenirBold', 'Avenir LT Std', sans-serif;
+    font-family: 'Rotunda', 'AvenirMedium', sans-serif;
     background-color: #080808;
 }
 
@@ -1542,7 +1542,7 @@ overflow-y: hidden;
         margin: 50px auto 70px;
         padding: 100px 0 0 0;
         letter-spacing: 2px;
-        font-family: 'Rotunda', sans-serif;
+        font-family: 'RotundaMedium', sans-serif;
     }
     .management-member {
         position: relative;
@@ -1629,7 +1629,7 @@ overflow-y: hidden;
         margin: 50px auto 70px;
         padding: 100px 0 0 0;
         letter-spacing: 2px;
-        font-family: 'Rotunda', sans-serif;
+        font-family: 'RotundaMedium', sans-serif;
     }
     .board-member {
         position: relative;
@@ -1758,7 +1758,7 @@ overflow-y: hidden;
 #experts h1{
     position: relative;
     text-align: left;
-    font-family: 'Rotunda', sans-serif;
+    font-family: 'RotundaMedium', sans-serif;
     font-style: normal;
     left: 13%;
     width: 87%;
@@ -1943,7 +1943,7 @@ margin-top: 200px;
     margin: auto;
     width: 74vw;
     font-size: 42px;
-    font-family: 'Rotunda', sans-serif;}
+    font-family: 'RotundaMedium', sans-serif;}
     #publications .title>span {
         font-size: 18px;
         vertical-align: middle;
@@ -2013,7 +2013,7 @@ margin-top: 200px;
                 }
         #publications .headline {
             display: block;
-            font-family: 'Rotunda', sans-serif;}
+            font-family: 'RotundaMedium', sans-serif;}
         #publications .source {
             color: #656565;
             font-family: 'Rotunda', sans-serif;
@@ -2037,7 +2037,7 @@ margin-top: 200px;
 
 #FAQ {
     position: relative;
-    font-family: 'Rotunda', sans-serif;
+    font-family: 'RotundaMedium', sans-serif;
     color: white;
     background-color: #051B27;
     text-align: left;
@@ -2133,7 +2133,7 @@ margin-top: 200px;
         padding-top: 100px;
         position: relative;
         font-size: 42px;
-        font-family: 'Rotunda', sans-serif;}
+        font-family: 'RotundaMedium', sans-serif;}
         #press-releases .title svg {
             width: 35vw;
             height: 15px;
@@ -2189,7 +2189,7 @@ margin-top: 200px;
     @media (max-width: 991px) {
         #press-releases .logo {
             text-align: center;
-            transform: translateY(0);
+            transform:translateY(0);
             height: 150px;}
             #press-releases .logo img {
                 width: 150px;}
