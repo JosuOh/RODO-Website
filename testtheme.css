@@ -34,6 +34,7 @@
 
 html {
     background-color: #080808;
+    font-family: 'Rotunda', 'AvenirMedium', sans-serif;
 }
 
 body {
@@ -1005,7 +1006,7 @@ button.mfp-close {
 .navbar {
     background: #080808;
     height: 80px;
-    font-family: 'Rotunda', serif;
+    font-family: 'Rotunda', 'AvenirBold', serif;
 }
 .navbar-brand {
     width: 39px;
@@ -1067,7 +1068,7 @@ button.mfp-close {
         border-radius: 400px;
         border: #fff 3px solid;
         padding: 3px 12px 0;
-        font-family: 'AvenirBold';
+        font-family: 'AvenirBold', sans-serif;
         width: 111px;
         height: 38px;
         background-color: transparent;
@@ -1096,7 +1097,7 @@ button.mfp-close {
     border-radius: 400px;
     border: #fff 3px solid;
     padding: 3px 15px 0;
-    font-family: 'AvenirBold';
+    font-family: 'AvenirBold', sans-serif;
     width: 111px;
     height: 38px;
     background-color: transparent;
