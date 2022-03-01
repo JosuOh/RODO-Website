@@ -1606,7 +1606,7 @@ overflow-y: hidden;
     top: 25px;
     width:100%;
     font-size: 43%;
-    margin-right: 60px;
+    padding-right: 60px;
     font-family: 'Rotunda', sans-serif;}
     .management-member .bio .cred {
         font-weight: bold;
@@ -1686,7 +1686,7 @@ overflow-y: hidden;
     z-index: 0;
     top: 25px;
     width: 100%;
-    margin-right: 60px;
+    padding-right: 60px;
     font-size: 43%;
     font-family: 'Rotunda', sans-serif;}
     .board-member .bio .cred {
