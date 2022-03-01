@@ -9,7 +9,12 @@
     <title>Smileloc</title>
     <!--Favicon-->
     <link rel="icon" href="smileloc-icon.png" type="image/x-icon" />
-        
+    <!---Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="http://fonts.cdnfonts.com/css/avenir-lt-std" rel="stylesheet">
+    <link rel="stylesheet" href="fontsheet.css" />
+
     <!---SwiperJS CSS-->
     <link
     rel="stylesheet"
@@ -28,12 +33,6 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
     rel="stylesheet"/>
-
-    <!---Fonts-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link href="http://fonts.cdnfonts.com/css/avenir-lt-std" rel="stylesheet">
-    <link rel="stylesheet" href="fontsheet.css" />
 
     <!---Icons-->
     <script src="https://kit.fontawesome.com/d45cc5d9fb.js" crossorigin="anonymous"></script>
@@ -69,14 +68,14 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" id="nav-logo" href="#"><img src="rodomedical-logo.png"></a>
+            <a class="navbar-brand" id="nav-logo" href="#page1"><img src="rodomedical-logo.png"></a>
           </div>
           
           
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      
             <ul class="nav navbar-nav mr-auto navbar-right">
-              <li><a href="Technology.html">THE Technology</a></li>
+              <li><a href="Technology.html" class="linkTech">THE Technology</a></li>
               <li><a href="TheTeam.html">THE Team</a></li>
               <li><a href="Resource.html">Resources</a></li>
               <li><a href="News.html">News</a></li>
@@ -101,7 +100,7 @@
             <source src="Smileloc_in_Action_Page1.mp4" type="video/mp4">
         </video>
         </div>
-        <a href="#c-video" id="video-link" class="play-btn more" onclick="loadVid();"><img id="play-icon" src="play button.svg"><span class="play-text">Play full video</span><img src="arrow icon.svg"></a>
+        <a href="#c-video" id="video-link" class="play-btn more"><img id="play-icon" src="play button.svg"><span class="play-text">Play full video</span><img src="arrow icon.svg"></a>
         <div id="c-video" class="container-fluid mfp-with-zoom mfp-hide" style="max-width: 75%; margin: 0 auto;">
                 <video playsinline controls id="promo-video" class="pop-vid" src="RODO - 30 Second Promo - RODO Only2.mp4" >
                 </video>
@@ -155,7 +154,6 @@
                         compromising clinical outcome.&rdquo;</span> <br><span class="quotee">Dr. Michael Pikos, Pikos Institute</span></div>
         
     </div>
-    
     <div class="swiper-slide" id="page9">
         <div id="flex-wrap">
             <div class="flex-text">
@@ -487,6 +485,8 @@
             <img class="logo" src="rodomedical-logo-sm.png">
             &nbsp;
             RODO Medical, Inc. 2635 N. First St. Suite 218, San Jose, CA 95134
+            <br>
+            ©Copyright 2022 RODO Medical® I All Rights Reserved.
         </div>
 
     </div>
@@ -497,9 +497,6 @@
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script type="text/javascript">
-    playfirst = function() {
-        document.getElementById();
-    };
 
     /*Initiates Magnific Popup*/
     $('#video-link').magnificPopup({
