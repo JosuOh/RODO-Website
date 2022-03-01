@@ -116,15 +116,6 @@ var page_7 = document.querySelector('#page7');
 var page_8 = document.querySelector('#page8');
 var page_9 = document.querySelector('#page9');
 
-window.addEventListener('load', function () {
-document.addEventListener('click', function() {
-  if(isInViewport(page_3)) {
-    playVid3();
-  } else {
-    pauseVid3();
-  }
-}, false);
-
 swiper.on('resize', function() {
     if (swiper.height > bg.style.height) {
         bg.style.height = swiper.height;
