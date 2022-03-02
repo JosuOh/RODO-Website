@@ -1,15 +1,7 @@
-//Glitches: 
-//      - Swiper Double Scrolls through some slides... Why?
-//      - White Background (looks like from vid 3) flickers into the lower pages... why?
-//      - Sometimes the videos don't play again after going back into viewBox 
-//      - Possibly because of incorrect Swiper Size
-//      - Video doesn't resize smoothly. Possibly because of wrong comparison
-
 var mfp_container;
-
-
-
+console.log('clicked');
 document.addEventListener('click', function() {
+  console.log('clicked');
     mfp_container = document.querySelector(".pop-vid"); 
     mfp_all = document.querySelectorAll(".pop-vid");
   document.addEventListener('click', function(event) {
@@ -177,8 +169,6 @@ const swiper = new Swiper('.swiper-main', {
     shortSwipes: true,
 
     forceToAxis: true,
-    preventClicks: true,
-    preventClicksPropagation: true,
     preventInteractionOnTransition: true,
 
     // If we need pagination
@@ -211,13 +201,16 @@ const swiper = new Swiper('.swiper-main', {
     },
     
     breakpoints: {
-
+      480: {
+        noSwiping: false,
+      },
+  
       992: {
-        noSwiping: true,
+        noSwiping: false,
       },
   
       1024: {
-        noSwiping: true
+        noSwiping: false
       },
       1920 : {
         noSwiping: true
@@ -254,7 +247,6 @@ $('#nav-logo').click(swiper,function(){
 })
 
 
-/* 
 function keepCentered() {
   var w = document.querySelector("#bgvideo2").clientWidth;
   var windowWidth = window.innerWidth;
@@ -264,7 +256,7 @@ function keepCentered() {
       obj.style.transform = "";
     }
 }
-window.addEventListener('resize', keepCentered); */
+window.addEventListener('resize', keepCentered);
 
 /* 
 function fontScale() {
