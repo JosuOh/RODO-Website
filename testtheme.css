@@ -2375,6 +2375,7 @@ margin-top: 200px;
                     width: 83%;
                     height: auto;
                     right: -24px;
+		    transform: translate(0);
                     top: 0;}
                 #press-releases #fda img {
                     position: relative;
