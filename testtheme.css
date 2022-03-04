@@ -1448,6 +1448,8 @@ overflow-y: hidden;
 #team .bar{
     font-family: 'Rotunda', sans-serif;
     font-weight: 300;
+    font-size: 42px;
+    margin-right: 20px;
 }
 
 .mgement-team {
@@ -1467,11 +1469,11 @@ overflow-y: hidden;
         font-size: 2.5vw;
         top: 90px;
         color: white;
-        margin: 0 auto 120px;
+        margin: 0 auto 0;
     }
     #CAB-page .row-wrap {
         position: relative;
-        margin: 130px auto 8.25vw;
+        margin: 6.77vw auto 8.25vw;
         color: white;
         height: 20vw;
         width: 75.2vw;}
@@ -1552,6 +1554,7 @@ overflow-y: hidden;
         }
         #CAB-page .row-wrap {
             height: 400px;
+            margin-top: 130px;
         }
         #CAB-page .img-wrap img {
             width: auto;
@@ -1648,8 +1651,8 @@ overflow-y: hidden;
         margin: 0px auto 70px;
         padding: 20px 0 0 0;
         letter-spacing: 1px;
-        font-family: 'RotundaMedium', sans-serif;
-        font-size: 42px;
+        font-family: 'Rotunda', sans-serif;
+        font-weight: normal;
     }
     .management-member {
         position: relative;
@@ -1792,9 +1795,28 @@ overflow-y: hidden;
 #evp {
     width: 100%;
 }
-#team .title .subtext{
-    font-size: 18px;
+#team .subtext{
+    font-size: 14px;
     font-weight: 400;
+    font-family: 'Rotunda', sans-serif;
+    display: inline-block;
+    width: 43%;
+    vertical-align: middle;
+    transform: translateY(2px);}
+    #management .subtext{
+        width: 64%;
+    }
+@media(max-width: 1400px) {
+    #board .subtext{
+        transform:translateY(0);
+
+    }
+}
+@media(max-width: 1250px) {
+    #team .subtext {
+        width: 100%;
+        transform: translate(0);
+    }
 }
 @media (max-width: 1200px) {
     #board {
@@ -1803,7 +1825,6 @@ overflow-y: hidden;
             font-size: 28px;
         }
 }
-
 
 /***************** Resources Page CSS********************************************************/
 
@@ -2349,7 +2370,7 @@ margin-top: 200px;
                 right: -30px;
                 transform: translateY(-35px);
                 filter: brightness(0) invert(1);}
-                #press-releases #pr img {
+                #press-releases #rdp img {
                     position: relative;
                     width: 83%;
                     height: auto;
@@ -2395,9 +2416,9 @@ margin-top: 200px;
             height: 150px;}
             #press-releases .logo img {
                 width: 150px;}
-                #press-releases #pr img {
+                #press-releases #rdp img {
                     width: auto;
-                    height: 100%;}
+                    height: 50%;}
                 #press-releases #fda img {
                     width: 150px;
                     height: auto;
