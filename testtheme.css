@@ -1966,7 +1966,10 @@ overflow-y: hidden;
 }
 #team .title .subtext{
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
+    font-family: 'Rotunda';
+    vertical-align: middle;
+}
 }
 @media (max-width: 1200px) {
     #board {
