@@ -1362,7 +1362,247 @@ overflow-y: hidden;
 
 
 
-/**************************************************TheTeam CSS**********************************************************************/
+
+#tech-page {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;}
+    #tech-page::-webkit-scrollbar {
+        width: 5px;
+        display: block;
+        background-color: transparent;}
+        #tech-page::-webkit-scrollbar-thumb {
+            border-radius: 25px;
+            background: #98A6AD;}
+            #tech-page::-webkit-scrollbar-track {
+                border-radius: 25px;
+                margin-top: 78px;
+                background: rgba(255, 255, 255, 0.25);}
+                #tech-page::-webkit-scrollbar-button {
+                    display:none;}
+#smileloc-tree {
+    position: relative;
+    top: 80px;
+    background-color: white;
+    height: auto;}
+    #smileloc-tree .title {
+        padding-top: 80px;
+        text-align: left;
+        font-size: 42px;
+        width: 80%;
+        margin: 0 auto 60px;}
+        #smileloc-tree .title .top-text {
+            font-weight: bold;}
+        #smileloc-tree .title .bottom-text{
+            color: #080808;
+            font-size: 18px;}
+            #smileloc-tree .title .bottom-text a {
+                color: #080808;
+                text-decoration: underline;}
+    #smileloc-tree .row {
+        width: 85%;
+        margin: auto;
+        padding-bottom: 80px;}
+        #smileloc-tree .info {
+            text-align: center;
+            transform: translatey(-50px);
+            margin-left: 100px;}
+            #smileloc-tree .info h3 {
+                font-size: 20px;
+                font-family: 'AvenirBolder', sans-serif;
+                text-align: left;}
+            #smileloc-tree .info p {
+                text-align: left;
+                font-family: 'Rotunda', sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+                margin-top: 30px;
+                margin-bottom: 60px;}
+            #smileloc-tree .info video {
+                width: 95%;
+            }
+
+
+
+                    
+#page-1 {
+    position: relative;
+    margin-top: 80px;
+    width: 100vw;
+    height: auto;
+    background-color:#080808;
+    overflow: hidden;
+    color: white;}
+    #page-1 .title {
+        position: relative;
+        top: 90px;
+        width: 64vw;
+        height: auto;
+        margin: 0 auto 100px;}
+        #page-1 .title svg {
+            width: 100%;
+        }
+    #page-1 .row-wrap {
+        position: relative;
+        width: 78%; 
+        margin: auto;
+        height: 23.4vw;
+        text-align: left;
+        margin-bottom: 50px;
+}
+    #right-box {
+        text-align: right;}
+        #right-box .subtitle {
+            text-align: left;
+            margin-left: 6%;}
+            @media (max-width: 1280px) {
+                #right-box {
+                    margin: 10px 0 100px;
+                    text-align: left;
+                }
+                #right-box .subtitle {
+                    text-align: left;
+                    margin-left: 0;
+                }
+            }
+    #page-1 p {
+        position: relative;
+        text-align: justify;
+        width: 78%;
+        font-size: 16px;
+        margin-bottom: 105px;
+        font-family: 'AvenirMedium', sans-serif;
+    }
+        #page-1 .column {
+            position: relative;
+            top: 50px;
+        }
+            #page-1 .subtitle {
+                font-size: 18px;
+                margin-top: 10px;
+                font-family: 'AvenirBolder';
+            }
+            #page-1 .gif {
+                left: 45%;
+            }
+            #page-1 #right-box .gif {
+                left: 50%;
+            }
+            @media (max-width: 992px) {
+                #page-1 #right-box .gif {
+                    left: 45%;}
+                #page-1 p { 
+                    margin-top: 415px;
+                } 
+            }
+    #page-1 .pop-thumbnail {
+        width: 93.6%;}
+#page-2 {
+    width: 100vw;
+    height: auto;
+    background-color: white;}
+    #page-2 img {
+        width: 100%;}
+    #page-2 a {
+        color:#080808;
+        text-decoration: underline;
+    }
+    #page-2 .row-wrap {
+        width: 85%;
+        text-align: center;
+        margin: 0 auto;}
+        #page-2 .title {
+            position: relative;
+            top: -29px;
+            padding-bottom: 25px;
+            line-height: 30px;}
+        #page-2 #techPic {
+            margin-top: 25px;}
+            #page-2 #techPic {
+                transform: translate(-50px);
+            }
+        #page-2 .col-lg-6 {
+            text-align: left;
+            margin: 95px 0px 0;
+            padding: 0 45px;}
+            #page-2 .col-lg-6
+        #page-2 .vid-div {
+            margin-top: 35px;}
+            #page-2 .vid-div {
+                width: 90%;}
+                #page-2 #lump {
+                    width: 87.88%;
+                }
+            #fd-vid .pop-thumbnail {
+                transform: translateX(60px);
+            }
+            #column-2 {
+                transform: translate(-25px, 24px);}
+            .vid-div h3 {
+                text-align: right;
+                font-size: 12px;
+                transform: translate(58px, -13px);
+            }
+        #page-2 #logos {
+            margin: 72px 0 0px;
+            width: 80%;
+        }
+        #page-2 .title .top-text {
+            font-size: 24px;
+            letter-spacing: 2px;
+            font-family: 'Rotunda', sans-serif;
+            font-weight: bold;}
+        #page-2 .title .subtext {
+            font-size: 18px;
+            font-family: 'AvenirMedium', sans-serif;
+            font-weight: normal;
+        }
+        #page-2 .lump-row {
+            margin-top: 50px;
+            width: 75%;}
+            #page-2 .loc {
+                font-size: 16px;
+                display: inline-block;
+                text-align: center;
+                font-family: 'AvenirBold';
+                margin-top: 30px;
+                width: 49%;}
+                .loc#lv {
+                    padding-left: 0;
+                    transform: translateY(-3px);}
+                .loc#uv {
+                    padding-left: 0;
+                    transform: translateX(-31px);
+                }
+        #page-2 .wrapper {
+            transform: translate(69px, 3px);
+            margin-top: 30px;}
+            #page-2 .caption-row {
+                transform: translateY(-25px);
+            }
+
+        #page-2 .gif {
+            left:53%;
+            top: 28%;}
+.col-lg-5 {
+    width: 41.67%;
+}
+@media (max-width: 992px) {
+    #page-2 .gif {            
+        top: 20%;
+        left: 45%;
+        transform: translate(60px, 0);
+    }
+}
+@media (max-width: 1280px){
+    #page-2 .col-xs-12 {
+        width: 100%;
+    }
+}
+
+
+
+/*Team CSS*/
 #team {
     background-color: #051B27;
     width: 100vw;}
@@ -1379,6 +1619,10 @@ overflow-y: hidden;
                 background: rgba(255, 255, 255, 0.25);}
                 #team::-webkit-scrollbar-button {
                     display:none;}
+#team .bar{
+    font-family: 'Rotunda', sans-serif;
+    font-weight: 300;
+}
 
 .mgement-team {
     background-color: white;
@@ -1552,12 +1796,11 @@ overflow-y: hidden;
     color: white;
     text-align: left;
     letter-spacing: 1px;
-    height: 1000px;
+    height: auto;
     font-family: 'Rotunda', sans-serif;
-    font-size: 1.875vw;}
+    font-size: 2.1875vw;}
     #management .manage-scroll {
-        overflow-y: scroll;
-        height: 65%;
+        height: auto;
         width: 75%;}
         #management .manage-scroll::-webkit-scrollbar {
             width: 5px;
@@ -1575,10 +1818,11 @@ overflow-y: hidden;
             background-color: inherit;}
     #management .title {
         width: 75%;
-        margin: 50px auto 70px;
+        margin: 0px auto 70px;
         padding: 100px 0 0 0;
-        letter-spacing: 2px;
-        font-family: 'Rotunda', sans-serif;
+        letter-spacing: 1px;
+        font-family: 'RotundaMedium', sans-serif;
+        font-size: 42px;
     }
     .management-member {
         position: relative;
@@ -1586,34 +1830,39 @@ overflow-y: hidden;
         margin: 0 auto 40px;
     }
     .management-member .name {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+        position: relative;
+        top: 0;
+        color: #a0a0a0;
         transition: all 0.25s ease-in-out;
         opacity: 1;
-        letter-spacing: 3px;
-        z-index: 1;}
+        letter-spacing: 1px;
+        z-index: 1;
+        font-family: 'RotundaThin', sans-serif;
+        font-weight: 300;}
         .management-member .bold {
             font-family: 'Rotunda', sans-serif;
             font-weight: normal;
             font-size: 2.1875vw;
         }
 .management-member .bio {
-    opacity: 0;
-    color:#2E414C;
+    opacity: 1;
+    color:white;
     transition: all 0.25s ease-in-out;
     z-index: 0;
     top: 25px;
     width:100%;
     font-size: 43%;
     padding-right: 60px;
-    font-family: 'Rotunda', sans-serif;}
+    font-family: 'RotundaThin', sans-serif;
+    font-weight: 200;}
     .management-member .bio .cred {
-        font-weight: bold;
+        font-weight: 500;
+        font-family: 'RotundaMedium', sans-serif;
+        letter-spacing: 2px;
     }
-#management .management-member:hover .name{
+/* #management .management-member:hover .name{
     opacity: 0.3;
-    color: #2E414C;
+    color: #fff;
     top: 0;
     z-index: -1;
     transform: translateY(-30%);}
@@ -1621,12 +1870,12 @@ overflow-y: hidden;
         opacity: 1;
         color: white;
         z-index: 5;
-    }     
+    }     */ 
 
 
 @media (max-width: 1200px) {
     #management {
-        font-size: 24.25px;
+        font-size: 28px;
     }
     #management .bold {
         font-size: 28px;
@@ -1644,12 +1893,11 @@ overflow-y: hidden;
     color: white;
     text-align: left;
     letter-spacing: 1px;
-    height: 1000px;
+    height: auto;
     font-family: 'Rotunda', sans-serif;
-    font-size: 1.875vw;}
+    font-size: 2.1875vw;}
     #board .board-scroll {
-        overflow-y: scroll;
-        height: 65%;
+        height: auto;
         width: 75%;}
         #board .swiper-slide {
             background-color: inherit;}
@@ -1657,10 +1905,11 @@ overflow-y: hidden;
                 display: none;}
     #board .title {
         width: 75%;
-        margin: 50px auto 70px;
-        padding: 100px 0 0 0;
+        margin: 0px auto 70px;
+        padding: 20px 0 0 0;
         letter-spacing: 2px;
         font-family: 'Rotunda', sans-serif;
+        font-weight: normal;
     }
     .board-member {
         position: relative;
@@ -1668,31 +1917,34 @@ overflow-y: hidden;
         margin: 0 auto 40px;
     }
     .board-member .name {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        transition: all 0.25s ease-in-out;
+        position: relative;
+        color: #a0a0a0;
+        top: 0;
         opacity: 1;
-        z-index: 1;}
+        z-index: 1;
+        font-family: 'RotundaThin', sans-serif;
+        font-weight: 300;}
         .board-member .bold {
             font-family: 'Rotunda', sans-serif;
-            font-weight: normal;
+            font-weight: 400;
             font-size: 2.1875vw;
         }
 .board-member .bio {
-    opacity: 0;
-    color:#2E414C;
-    transition: all 0.25s ease-in-out;
+    opacity: 1;
+    color:#fff;
     z-index: 0;
     top: 25px;
     width: 100%;
     padding-right: 60px;
     font-size: 43%;
-    font-family: 'Rotunda', sans-serif;}
+    font-family: 'RotundaThin', sans-serif;
+    font-weight: 200;}
     .board-member .bio .cred {
-        font-weight: bold;
+        font-family: 'RotundaMedium';
+        font-weight: 500;
+        letter-spacing: 2px;
     }
-#board .board-member:hover .name{
+/* #board .board-member:hover .name{
     opacity: 0.3;
     color: #2E414C;
     top: 0;
@@ -1702,7 +1954,7 @@ overflow-y: hidden;
         opacity: 1;
         color: white;
         z-index: 5;
-    }     
+    }      */
 .tab-caption {
     font-size: 10px;
     color: #27DDFF;
@@ -1712,12 +1964,15 @@ overflow-y: hidden;
 #evp {
     width: 100%;
 }
-
+#team .title .subtext{
+    font-size: 18px;
+    font-weight: 400;
+}
 @media (max-width: 1200px) {
     #board {
-        font-size: 26.25px;}
+        font-size: 28px;}
         #board .bold {
-            font-size: 30px;
+            font-size: 28px;
         }
 }
 
@@ -1732,12 +1987,11 @@ overflow-y: hidden;
         border-radius: 25px;
         background: #98A6AD;}
         #resource-page::-webkit-scrollbar-track {
-            margin-top: 63px;
+            margin-top: 75  px;
             border-radius: 25px;
             background: rgba(255, 255, 255, 0.25);}
             #resource-page::-webkit-scrollbar-button {
-                display: none;
-                all: unset;}
+                display: none;}
 
 #experts {
     color: white;
@@ -1779,7 +2033,7 @@ overflow-y: hidden;
 #experts h1{
     position: relative;
     text-align: left;
-    font-family: 'Rotunda', sans-serif;
+    font-family: 'RotundaMedium', sans-serif;
     font-style: normal;
     left: 13%;
     width: 87%;
@@ -1938,11 +2192,11 @@ margin-top: 200px;
     background-color: white;
     color: black;
     position: relative;
-    height: 1000px;}
-    #publications .publication-scroll{
+    height: auto;}
+/*     #publications .publication-scroll{
         background-color: white;
         text-align: left;
-        font-size: 16px;}
+        font-size: 17px;}
         #publications .row-wrap::-webkit-scrollbar {
             width: 5px;
             display: block;
@@ -1954,40 +2208,56 @@ margin-top: 200px;
                     border-radius: 25px;
                     background: rgba(8, 8, 8, 0.25); }
                     #publications .row-wrap::-webkit-scrollbar-button {
-                        display:none;}
+                        display:none;} */
         #publications .row-wrap {
-            overflow-y: scroll;
-            height: 560px;
-            width: 77.2vw;
-            margin: 95px auto 0;
+            height: auto;
+            width: 78.2vw;
+            margin: 95px 11.6vw 0 9.6vw;
+            text-align: left;
         }
 
 #publications .title{
-    padding-top:100px;
+    padding-top: 90px;
     text-align: left;
     margin: auto;
     width: 74vw;
     font-size: 42px;
-    font-family: 'Rotunda', sans-serif;}
+    font-family: 'RotundaMedium', sans-serif;}
     #publications .title>span {
-        font-size: 18px;
+        font-size: 20px;
         vertical-align: middle;
-        font-family: "Rotunda", sans-serif;}
+        font-family: 'Rotunda', sans-serif;
+        font-weight: normal;}
     #publications .col-lg-2, #publications .col-xs-1 {
         text-align: center;
         padding: 0;}
 #publications .group {
     position: relative;
     margin-bottom: 30px;}
+#publications #joi .article{
+    margin-top: 60px;
+    margin-bottom: 70px;
+}
+#publications #joi a:hover {
+    cursor: not-allowed;}
     #publications .group#jpd {
-        height: 510px;}
+        transform: translateX(30px);
+        height: 475px;}
         #publications #float-right {
             margin-bottom: 30px;
-            height: 510px;}
+            height: 475px;}
         #publications .article {
             color: black;
-            height: 75px;
-            margin: 20px 0;}
+            height: 75px;}
+            #publications .article .headline {
+                margin-bottom:20px;
+                padding-right: 60px;}
+            #publications #omsc {
+                transform: translateY(55px);
+            }
+            #publications .col-lg-6.doc {
+                transform: translateX(30px);
+            }
             #publications .article a {
                 color: black;}
                 #publications .article a:hover {
@@ -2001,11 +2271,34 @@ margin-top: 200px;
                 #publications .article .toggle {
                     display: block;
                     margin: 0;
-                    width: 50%;
-                    transform: translate(0);
+                    width: 100%;
+                    transform: translate(0);}
+                #publications .article .untoggle {
+                    display: none;
+                    margin: 0;
+                    transform: translate(0);}
+                #publications #smileloc, #publications .article .other.toggle {
+                    transform:translateY(61px);
+                }
+                @media (min-width: 1200px) {
+                    .col-lg-2 {
+                        width: 21.666666667%;
+                    }
+                    .col-lg-9 {
+                        width: 70%;
+                    }
+                }
+                @media (max-width: 1300px) {
+                    #publications .group#jpd {
+                        height: 500px;}
+                        #publications #float-right {
+                            height: 500px;}
                 }
                 @media (max-width: 1200px) {
+                #publications .row-wrap {
+                    overflow-x: hidden;}
                     #publications .group#jpd {
+                        transform: translateX(0);
                         height: auto;}
                         #publications #float-right {
                             height: auto;}
@@ -2013,21 +2306,28 @@ margin-top: 200px;
                         margin-bottom: 15px;
                         width: auto;
                         height: 60px;}
+                        #publications #joi .full img {
+                            height: 75px;
+                        }
                     #publications .article .col-lg-2 {
                         height: 15px;
+                        transform: translate(0);
                     }
                     #publications .article .col-lg-2.full {
                         height: 100px;}
                     #publications .article.has-logo {
-                        height: 150px;
-                    }
+                        height: 150px;}
+                    #publications .col-lg-6.doc {
+                        transform: translate(0);}
                     #publications .article .col-lg-2 .other {
                         height: 40px;
                         margin-top: 20px;}
                         #publications #dbpia {
-                            height: 40px;}
+                            height: 30px;}
                         #publications .group {
-                            margin-bottom: 0px;
+                            margin-bottom: 0px;}
+                        #publications #omsc {
+                            transform: translate(0);
                         }
                     #publications .article #smileloc {
                         filter: brightness(0);
@@ -2039,13 +2339,18 @@ margin-top: 200px;
                         #publications .article .toggle {
                             display: none;
                         }
+                        #publications .article .untoggle {
+                            display: block;
+                            margin: auto;
+                        }
                 }
         #publications .headline {
             display: block;
-            font-family: 'Rotunda', sans-serif;}
+            font-family: 'RotundaMedium', sans-serif;}
         #publications .source {
             color: #656565;
             font-family: 'Rotunda', sans-serif;
+            font-weight: normal;
         }
         #publications .pdf-icon {
             height: 25px;
@@ -2056,6 +2361,7 @@ margin-top: 200px;
                 text-align: center;
             }
     #publications .bottom-notif {
+        margin-top: 35px;
         color: #27DDFF;
     }
     #publications .bottom-notif i{
@@ -2066,15 +2372,22 @@ margin-top: 200px;
     #publications .col-xs-2 {
         padding: 0;
     }
-
+#resource-page .title span.bar{
+    font-family: 'Rotunda', sans-serif;
+    font-weight: 300;
+    -webkit-text-stroke: 0.25px;
+    font-size: 42px;
+    margin: 0 20px 0 10px;
+}
 
 #FAQ {
     position: relative;
-    font-family: 'Rotunda', sans-serif;
+    font-family: 'RotundaMedium', sans-serif;
     color: white;
     background-color: #051B27;
     text-align: left;
-    font-size: 42px;}
+    font-size: 42px;
+    padding-bottom: 25px;}
     #FAQ .title {
         width: 75.2vw;
         margin: auto;
@@ -2141,7 +2454,7 @@ margin-top: 200px;
 .arrow-wrap {
     width: 50px;
     margin:auto;
-    height: 50px;}
+    height: 35px;}
     .arrow-wrap svg {
         vertical-align: bottom;
     }
@@ -2155,7 +2468,7 @@ margin-top: 200px;
     margin: 35px auto 0;
     padding-bottom: 50px;
     color:#A8EBFF;
-    font-size: 10px;}
+    font-size: 14px;}
     .arrow-wrap:hover .toggle{
         color: white;
         display: block;}
@@ -2178,7 +2491,7 @@ margin-top: 200px;
         padding-top: 100px;
         position: relative;
         font-size: 42px;
-        font-family: 'Rotunda', sans-serif;}
+        font-family: 'RotundaMedium', sans-serif;}
         #press-releases .title svg {
             width: 35vw;
             height: 15px;
@@ -2197,14 +2510,28 @@ margin-top: 200px;
     #press-releases .article {
         position: relative;
         width: 100%;
-        height: 195px;}
+        height: 195px;
+        clear: both;}
         #press-releases .logo {
             height: 100%;}
             #press-releases .logo img {
-                width:100%;
+                width:75%;
+                position: relative;
+                right: -30px;
                 transform: translateY(-35px);
-                filter: brightness(0) invert(1);
-            }
+                filter: brightness(0) invert(1);}
+                #press-releases #pr img {
+                    position: relative;
+                    width: 83%;
+                    height: auto;
+                    right: -24px;
+                    top: 0;}
+                #press-releases #fda img {
+                    position: relative;
+                    width: 70%;
+                    height: auto;
+                    right: -40px;
+                    top: 0;}
             #press-releases .logo.straumann {
                 transform: translate(0px, 40px);
             }
@@ -2221,7 +2548,8 @@ margin-top: 200px;
                 font-weight: 400;}
         #press-releases .excerpt {
             text-align: left;
-            font-size: 13px;
+            font-size: 15px;
+            line-height: 26px;
             font-family: 'RotundaThin', sans-serif;
             
             /* overflow: hidden; */
@@ -2238,9 +2566,15 @@ margin-top: 200px;
             height: 150px;}
             #press-releases .logo img {
                 width: 150px;}
-                #press-releases .logo.straumann {
-                    transform: translateY(40%);
+                #press-releases #pr img {
+                    width: auto;
+                    height: 100%;}
+                #press-releases #fda img {
+                    width: 150px;
+                    height: auto;
                 }
+                #press-releases .logo.straumann {
+                    transform: translateY(40%);}
         #press-releases .article {
             height: 420px;
         }
