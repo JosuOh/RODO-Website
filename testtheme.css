@@ -109,6 +109,32 @@ svg g text {
     height: 1000px;
     left: 0;
     /* cursor: wait; */} 
+     @media (min-width: 1921px) {
+        @media (min-aspect-ratio: 16/9) {
+            .swiper-main {
+                width: 100vw;
+                height: 56.25vw;
+            }
+            .fs-vid {
+                height: auto;
+                width: 100vw;
+                min-width: 100vw;
+            }
+        }
+    }
+    @media (min-width: 1921px) { 
+        @media (max-aspect-ratio: 16/9) {
+            .swiper-main {
+                width: 160vh;
+                height: 100vh;
+            }
+            .fs-vid {
+                height: 100vh;
+                width: auto;
+                min-width: auto;
+            }
+        }
+     }
      @media (max-width:1680px)  {
         @media (max-height: 1050px) {
             .swiper-main {
