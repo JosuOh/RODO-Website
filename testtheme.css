@@ -1819,7 +1819,7 @@ overflow-y: hidden;
     #management .title {
         width: 75%;
         margin: 0px auto 70px;
-        padding: 100px 0 0 0;
+        padding: 20px 0 0 0;
         letter-spacing: 1px;
         font-family: 'RotundaMedium', sans-serif;
         font-size: 42px;
@@ -1906,7 +1906,7 @@ overflow-y: hidden;
     #board .title {
         width: 75%;
         margin: 0px auto 70px;
-        padding: 20px 0 0 0;
+        padding: 100px 0 0 0;
         letter-spacing: 2px;
         font-family: 'Rotunda', sans-serif;
         font-weight: normal;
