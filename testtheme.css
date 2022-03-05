@@ -1550,7 +1550,7 @@ overflow-y: hidden;
         
     @media (max-width: 1199px) {
         #CAB-page .title {
-            font-size: 24px;
+            font-size: 32px;
         }
         #CAB-page .row-wrap {
             height: 400px;
