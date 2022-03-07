@@ -145,7 +145,7 @@ svg g text {
             top: 80px;
             width: 1706px;
             height: 841px;
-    }}
+		}}}
      @media (max-width:1680px)  {
         @media (max-height: 1050px) {
             .swiper-main {
