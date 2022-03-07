@@ -30,6 +30,10 @@
     font-family: 'AvenirBook';
     src: url('Avenir LT Std 45 Book.otf');
 }
+@font-face {
+    font-family: 'AvenirLight';
+    src: url('Avenir LT Std 35 Light.otf');
+}
 
 
 html {
