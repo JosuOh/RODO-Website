@@ -229,11 +229,8 @@ const carousel = new Swiper('.s-carousel', {
   spaceBetween: 20,
   direction: 'horizontal',
   maxBackfaceHiddenSlides: 20,
-
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+  prevButton: '#cab-prev',
+  nextButton: '#cab-next',
 
   autoplay: {
     delay: 5000,
