@@ -139,6 +139,13 @@ svg g text {
             }
         }
      }
+     @media (max-width:1707px) {
+        @media(max-height:842px) {
+        .swiper-main {
+            top: 80px;
+            width: 1706px;
+            height: 841px;
+    }}
      @media (max-width:1680px)  {
         @media (max-height: 1050px) {
             .swiper-main {
@@ -983,35 +990,6 @@ svg g text {
             border-color: #27DDFF;
                 color: white;}
 
-    #page9 .located {
-        position: absolute;
-        top: 83.5%;
-        width: 100%;
-        font-size: 1.3vh;
-        font-family: 'AvenirBook', sans-serif;}
-        #page9 .logo {
-            height: 1.574vh;
-            width: auto;
-        }   
-    #page9 button.contact {
-        position: absolute;
-        font-family: 'AvenirBold', sans-serif;
-        top: 73.83%;
-        width: 18vh;
-        left: 44.8%;
-        border-radius: 400px;   
-        background-color: transparent;
-        border: #fff 5px solid;
-        padding: 3px 0 0 0;
-        font-size: 2.59vh;} 
-        #page9 button:focus {
-            background-color: transparent;
-            border-color: white;
-            color: white;}
-        #page9 button.contact:hover {
-            background-color: #27DDFF;
-            border-color: #27DDFF;
-                color: white;}
 @media (max-width:1366px) {
         @media(max-height:768px) {
             #page9 h1 {
