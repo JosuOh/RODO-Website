@@ -291,6 +291,11 @@ svg g text {
     left: 5%;
     width: 20px;
 }
+@media (max-width: 784px) {
+    .swiper-pagination {
+        left: 2%;
+    }
+}
 
 .swiper-slide {
     background-color: #080808;
@@ -865,16 +870,22 @@ svg g text {
     #page7 .cad img {
         width: 72%;
         height: auto;}
-
+    #CAB-page .wrap {
+        position: relative;
+    }
     .swiper-button-next::after, .swiper-button-prev::after {
     content: "";}
     .swiper-button-next, .swiper-button-prev {
         color:white;
         font-size: 30px;}
         .swiper-button-next {
-            right: -4px;}
+            right: 12%;
+	    top: 50%;
+            transform: translateY(-30%);}
         .swiper-button-prev {
-            left:-4px;}
+            left:12%;
+	    top: 50%;
+            transform: translateY(-30%);}
             #page7 .swiper-slide {
                 background-color: #051B27;}
 
@@ -1603,9 +1614,14 @@ overflow-y: hidden;
         #CAB-page .row-wrap .caption.pikos, #CAB-page .row-wrap .caption.wu {
             margin-bottom: 40px;
             padding: 10px 43px 0;}
-        #CAB-page .s-carousel {
-            top: 75px;
-        }
+        #CAB-page .wrap {
+            top: 75px;}
+            #CAB-page .swiper-button-prev {
+                left: 6%;
+                top: 75%;}
+            #CAB-page .swiper-button-next {
+                right: 6%;
+                top: 75%;}
         #CAB-page {
             padding-bottom: 80px;
         }
@@ -1632,8 +1648,11 @@ overflow-y: hidden;
                 #CAB-page .row-wrap .caption.pikos {
                     text-align: center;}
             #CAB-page .img-wrap {
-                margin-bottom: 20px;
-            }
+                margin-bottom: 20px;}
+	    #CAB-page .swiper-button-prev {
+                top: 50%;}
+            #CAB-page .swiper-button-next {
+                top: 50%;}
             #michael {
                 order: 2;}
             #img-wu {
