@@ -945,20 +945,20 @@ svg g text {
             position: absolute;
             filter: brightness(0) invert(1);
             top: 66%;
-            left: 27%;
-            width: 13%;}
+            left: 25%;
+            width: 12%;}
         #page9 .icons #Graphy {
             position: absolute;
             filter: brightness(0) invert(1);
             top: 67%;
-            left: 44.5%;
+            left: 40.5%;
             width: 8%;}
         #page9 .icons #HEAT{
             position: absolute;
             filter: brightness(0) invert(1);
             top: 66%;
             left: 17.88%;
-            width: 3.4%;}
+            width: 3%;}
 
     #page9 .located {
         position: absolute;
