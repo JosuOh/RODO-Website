@@ -1016,11 +1016,11 @@ svg g text {
                 width: 125px;
             }
     }}
-@media (min-aspect-ratio: 32/17) {
+/*@media (min-aspect-ratio: 32/17) {
     #page9 {
         transform: translateY(-8%);
     }
-}
+}*/
 
 /* Popup Videos Modules*/
 .pop-vid {
