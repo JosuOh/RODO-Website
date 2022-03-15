@@ -25,32 +25,44 @@ var el;
   /*IF play-button is pressed, load video*/
 
 
-  var bg = document.getElementById("bgvideo");
+var bg = document.getElementById("bgvideo");
+  var bg11 = document.getElementById("bgvideo11");
   var bg2 = document.getElementById("bgvideo2");
   var bg3 = document.getElementById("bgvideo3");
+  var bg22 = document.getElementById("bgvideo22");
+  var bg33 = document.getElementById("bgvideo33");
   /*IF mfp-close is pressed, pause video*/
   function pauseVid() {
      bg.pause();
+     bg11.pause();
   }
   function playVid() {
       bg.currentTime= 0;
       bg.play();
+      bg11.currentTime= 0;
+      bg11.play();
   }
   
   function pauseVid2() {
     bg2.pause();
+    bg22.pause();
  }
  function playVid2() {
      bg2.currentTime= 0;
      bg2.play();
+     bg22.currentTime= 0;
+     bg22.play();
  }
 
  function pauseVid3() {
   bg3.pause();
+  bg33.pause();
 }
 function playVid3() {
    bg3.currentTime= 0;
    bg3.play();
+   bg33.currentTime= 0;
+   bg33.play();
 }
   function loadVid() {
     document.querySelectorAll(".pop-vid").load();
