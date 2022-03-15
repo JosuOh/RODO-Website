@@ -24,8 +24,7 @@ var el;
 
   /*IF play-button is pressed, load video*/
 
-
-var bg = document.getElementById("bgvideo");
+  var bg = document.getElementById("bgvideo");
   var bg11 = document.getElementById("bgvideo11");
   var bg2 = document.getElementById("bgvideo2");
   var bg3 = document.getElementById("bgvideo3");
