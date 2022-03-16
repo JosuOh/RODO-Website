@@ -1794,6 +1794,9 @@ overflow-y: hidden;
     #smileloc-tree .top-text {
         font-size: 40px;
     }
+    #smileloc-tree .subtext {
+	    margin-left: 0;
+	}
 }
 @media (max-width: 499px) {
     #smileloc-tree .title .bar {
