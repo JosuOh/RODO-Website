@@ -1779,6 +1779,8 @@ overflow-y: hidden;
     }
     #smileloc-tree .col-lg-64 {
 	    margin-top: 2.5em;}
+    #smileloc-tree .col-lg-36 {
+	margin-top: 0;}
 }
 @media (max-width: 899px) {
     #smileloc-tree .info h3 {
@@ -2350,7 +2352,7 @@ overflow-y: hidden;
     #management-member .name {
         letter-spacing: 0px;
     }
-    #management-member .bio {
+    .management-member .bio {
         padding-right: 0;
 	text-align: justify;
     }
