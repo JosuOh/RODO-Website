@@ -1752,7 +1752,7 @@ overflow-y: hidden;
             left: 60.8%;
             width: 10.6%;}
         #strau {
-            top: 3.4%;
+            top: 4.4%;
             left: 77%;
             width: 10.6%;}
 
@@ -1809,7 +1809,7 @@ overflow-y: hidden;
     #smileloc-tree .title .bar {
         display: none;
     }
-    #smileloc-tree #bioh.logo{
+    #smileloc-tree #bioh.logo {
         transform: translateY(75%);
 	}
 }
