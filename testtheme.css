@@ -1682,7 +1682,7 @@ overflow-y: hidden;
         text-align: left;
         float: left;
         position: relative;
-        font-size: 20px;
+        font-size: 19px;
         clear: right;
         width: 33%;
     }
@@ -2352,6 +2352,7 @@ overflow-y: hidden;
     }
     #management-member .bio {
         padding-right: 0;
+	text-align: justify;
     }
 }
 @media (max-width: 768px) and (max-aspect-ratio: 9 / 10){
@@ -2473,6 +2474,9 @@ overflow-y: hidden;
         #board .bold {
             font-size: 28px;
         }
+    .board-member .bio {
+        padding-right: 0;
+	    text-align: justify;}
 }
 @media (max-width: 768px) and (max-aspect-ratio: 9 / 10){
     .board-member .bio {
