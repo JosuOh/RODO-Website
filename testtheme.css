@@ -1796,6 +1796,9 @@ overflow-y: hidden;
     #smileloc-tree .title .bar {
         display: none;
     }
+    #smileloc-tree .logo {
+        transform: translateY(75%);
+	}
 }
 
                     
