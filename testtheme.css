@@ -1189,7 +1189,7 @@ svg g text {
                 width: 125px;
             }
     }}
-@media (max-width: 1020px) {
+@media (max-width: 1024px) {
 	#page9 button.contact {
 		top: calc(80.23vh - 80px);
 	}
