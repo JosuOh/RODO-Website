@@ -2243,11 +2243,11 @@ overflow-y: hidden;
 
 #management {
     position: relative;
-    background-color: #051B27;
+    background-color: #080808;
     color: white;
     text-align: left;
     letter-spacing: 1px;
-    padding-bottom: 100px;
+    padding-bottom: 0px;
     height: auto;
     font-family: 'Rotunda', sans-serif;
     font-size: 2.1875vw;}
@@ -2271,7 +2271,7 @@ overflow-y: hidden;
     #management .title {
         width: 75%;
         margin: 0px auto 70px;
-        padding: 20px 0 0 0;
+        padding: 50px 0 0 0;
         letter-spacing: 1px;
         font-family: 'Rotunda', sans-serif;
         font-weight: normal;
@@ -2350,7 +2350,7 @@ overflow-y: hidden;
 /** Board members CSS*/
 #board {
     position: relative;
-    background-color: #080808;
+    background-color: #051B27;
     color: white;
     text-align: left;
     letter-spacing: 1px;
@@ -2368,7 +2368,7 @@ overflow-y: hidden;
     #board .title {
         width: 75%;
         margin: 0px auto 70px;
-        padding: 100px 0 0 0;
+        padding: 0px 0 0 0;
         letter-spacing: 2px;
         font-family: 'Rotunda', sans-serif;
         font-weight: normal;
