@@ -2354,8 +2354,7 @@ overflow-y: hidden;
     }
     .management-member .bio {
         padding-right: 0;
-	text-align: justify;
-    }
+	text-align: justify;}
 }
 @media (max-width: 768px) and (max-aspect-ratio: 9 / 10){
     .management-member .bio {
