@@ -1189,6 +1189,11 @@ svg g text {
                 width: 125px;
             }
     }}
+@media (max-width: 899px) {
+	#page9 button.contact {
+		top: calc(80.23vh - 80px);
+	}
+}
     @media (min-aspect-ratio: 32/17) AND (min-height: 501px){
         #page9 {
             transform: translateY(-8%);
