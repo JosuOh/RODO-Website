@@ -620,6 +620,7 @@ svg g text {
     }
     .credit-video {
         top: calc(85vh - 80px);
+	font-size: 12px;
     }
 
 
