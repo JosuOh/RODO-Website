@@ -2266,7 +2266,7 @@ overflow-y: hidden;
 
 #management {
     position: relative;
-    background-color: #080808;
+    background-color: #051B27;
     color: white;
     text-align: left;
     letter-spacing: 1px;
@@ -2373,7 +2373,7 @@ overflow-y: hidden;
 /** Board members CSS*/
 #board {
     position: relative;
-    background-color: #051B27;
+    background-color: #080808;
     color: white;
     text-align: left;
     letter-spacing: 1px;
